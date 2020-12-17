@@ -144,7 +144,6 @@ nav {
 
 }
 
-
 .nav-active {
     transform: translateX(0%);
 }
@@ -158,27 +157,25 @@ nav {
         opacity: 1;
         transform: translateX(0px);
     }
-
 }
 
 .toggle .lineOne {
     transform: rotate(-45deg) translate(-5px,6px);
 }
-
 .toggle .lineTwo{
     opacity: 0;
 }
-
 .toggle .lineThree {
     transform: rotate(45deg) translate(-5px,-6px);
 }
 
-/******FOOTER*****/
 
+/******SLIDER*****/
 #slider {
-    height: 80vh;
+    height: 75vh;
     width: auto;
 }
+/******FOOTER*****/
 
 .sm-footer {
     padding: 0;
