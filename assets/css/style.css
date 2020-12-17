@@ -6,7 +6,9 @@
     box-sizing: border-box;
    
 }
-
+body {
+    overflow: hidden;
+}
 
 /******NAVIGATION******/
 
@@ -53,7 +55,6 @@ nav {
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 500;
-    
 }
 
 .nav-list a:hover {
@@ -71,6 +72,7 @@ nav {
     width: 25px;
     margin: 5px;
     background-color: #f9f8f6;
+    transition: all 0.3s ease;
 }
 
 .social-icon {
@@ -117,6 +119,7 @@ nav {
 
     .burger-menu{
         display: block;
+        
     }
 
     .social-icon {
@@ -170,11 +173,61 @@ nav {
     transform: rotate(45deg) translate(-5px,-6px);
 }
 
+/******FOOTER*****/
 
+#slider {
+    height: 80vh;
+    width: auto;
+}
 
+.sm-footer {
+    padding: 0;
+    background-color: #5e5553;
+    margin: 0 auto;
+    text-align: center;
+}
 
+.sm-icon {
+    display: inline-block;
+    margin: 0 auto;
+    padding-right: 3rem;
+    margin-bottom: 0.7rem;
+}
 
+.sm-icon a i {
+    font-size: 2rem;
+    text-align: center;
+    width: 2rem;
+    height: 2rem;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    color: #f9f8f6;
+    border: none;
 
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
 
+.sm-icon a i:hover {
+    color: #763300;
+}
 
+.footer-text {
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    padding-right: 3rem;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    color: #f9f8f6;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+@media screen and (max-width:768px){
+   .footer-text {
+       padding-right: 0;
+   }
+}
 
