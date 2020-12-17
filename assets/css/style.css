@@ -7,7 +7,7 @@
    
 }
 body {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /******NAVIGATION******/
@@ -105,6 +105,8 @@ nav {
         align-items: center;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+        z-index: 2;
+        
     }
 
     .nav-list a {
@@ -175,6 +177,27 @@ nav {
     height: 75vh;
     width: auto;
 }
+
+/***Locations****/
+
+.wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.place {
+    display: flex;
+    border: 5px solid #aaa7a2;
+    padding: 10px;
+    width: 100%;
+    margin: 30px;
+    
+
+}
+.place-photo {
+    height: 190px;
+    width: 190px;
+}
 /******FOOTER*****/
 
 .sm-footer {
@@ -227,4 +250,6 @@ nav {
        padding-right: 0;
    }
 }
+
+
 
