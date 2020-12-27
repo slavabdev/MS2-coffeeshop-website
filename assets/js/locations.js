@@ -4,9 +4,12 @@ function initMap() {
 let mapCenter= {lat: 51.898669, lng: -8.403624};
 
 let locations = [
-['Blackrock', 51.898669, -8.403624 ],
-['Cork', 51.895301, -8.471848 ],
-['Little Island', 51.904308, -8.357043]
+[`<h6 class="popup-header">Holybean (Blackrock)</h6> <p class="popup-content">Visit our Blackrock coffeeshop </br> and try our famous <strong>Holychino <i class="fas fa-mug-hot" aria-hidden="true"></i>.</strong></p>
+<a class="popup-link" href="https://goo.gl/maps/61eDWDqqRhK91W3y5" target="_blank"> Get directions</a>`, 51.898669, -8.403624 ],
+[`<h6 class="popup-header">Holybean (Cork)</h6> <p class="popup-content">Visit our first Cork coffeeshop ever. </br> Try our classic filter coffee, because classic never gets old!</p>
+<a class="popup-link" href="https://goo.gl/maps/uSmUje2NXm1irkdC8" target="_blank"> Get directions</a>`, 51.895301, -8.471848 ],
+[`<h6 class="popup-header">Holybean (Little Island)</h6> <p class="popup-content">Welcome to our <span class="popup-new-promo">New</span> Little Island coffeeshop!</br>You know what, we have discounts for you!</br> Click <a class="popup-link-promo" href="#" target="_blank"> HERE </a> to get your discount.</p>
+<a class="popup-link" href="https://goo.gl/maps/MWuHpxCrvS878Ysn9" target="_blank"> Get directions</a>`, 51.904308, -8.357043]
 ];
 map = new google.maps.Map(document.getElementById("map"), {
     center: mapCenter,
