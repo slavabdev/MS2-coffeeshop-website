@@ -38,15 +38,16 @@ html,body {
     height: 100%;
     top: 0;
     left: 0;
-    background-color:  #5e5553;
+    background-color:  #f9f8f6;
+    opacity: 0.9;
     z-index: 2;
 }
 
 .header-logo {
     text-decoration: none;
-    color: #f9f8f6;
+    color: #5e5553;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     font-family: "Lato", sans-serif;
     position: relative;
     z-index: 3;
@@ -57,6 +58,7 @@ html,body {
     height: auto;
     display: inline-block;
     border-radius: 50%;
+    padding-bottom: 5px;
 }
 
 .header-logo:hover {
@@ -97,8 +99,9 @@ html,body {
 .menu-item {
     text-transform: uppercase;
     text-decoration: none;
-    color: #f9f8f6;
+    color: #5e5553;
     font-size: 18px;
+    font-weight: 600;
     font-family: "Lato", sans-serif;
     margin-right: 20px;
 }
@@ -126,7 +129,7 @@ html,body {
         cursor: pointer;
     }
     .header-burger span {
-        background-color: #f9f8f6;
+        background-color: #5e5553;
         position: absolute;
         width: 100%;
         height: 2px;
@@ -137,7 +140,7 @@ html,body {
     .header-burger:before,
     .header-burger:after {
         content: '';
-        background-color: #f9f8f6;
+        background-color: #5e5553;
         position: absolute;
         width: 100%;
         height: 2px;
@@ -169,7 +172,7 @@ html,body {
         left: 0;
         overflow: auto;
         transition: all 0.3s ease;
-        background-color: #aaa7a2;
+        background-color: #f9f8f6;
         padding: 70px 10px 20px 10px;
         text-align: center;
     }
@@ -190,6 +193,79 @@ html,body {
 
 .content {
     padding-top: 60px;
+}
+
+ .section-wrapper {
+     margin: 4rem 0px;
+ }
+
+
+/*CAROUSEL*/
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  font-weight: 700;
+  color: #763300;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  font-weight: 700;
+  color: #763300;
+}
+
+.carousel-indicators li {
+    color: #763300;
+}
+
+.carousel img {
+  width: auto;
+}
+
+/*ABOUT*/
+
+/*PROMO SECTION*/
+
+#promo {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#promo .heading-text,
+#about .heading-text,
+#places .heading-text  {
+    padding-top: 0px;
+    margin-bottom: 1rem;
+}
+
+.break-line {
+text-align: center;
+margin-bottom: 1rem;
+}
+.break {
+    display: inline-block;
+    width: 20%;
+    margin-bottom: 8px;
+    
+}
+
+.break-line img {
+    width: 20px;
+    height: auto;
+    display: inline-block;
+    border-radius: 50%;
+    padding-bottom: 5px;
 }
 
 

@@ -36,113 +36,151 @@
                 </div>
             </div>
         </header>
-        <div class="content">
-            <div class="heading">
-                <h2 class="heading-text">Locations</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="assets/img/sliderbg1.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/img/sliderbg1.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/img/sliderbg1.jpg" alt="Third slide">
+                </div>
             </div>
-            <div class="wrapper">
-                <div class="row">
-                    <div class="col-lg-4 col-md-12 col-12">
-                        <div class="row no-gutters">
-                            <div class="col-12">
-                                <div class="places">
-                                    <div class="place-top-bg">
-                                        <h3 class="place-header">First lovely place</h3>
-                                    </div>
-                                    <div class="details">
-                                        <p class="place-text">
-                                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quaerat enim praesentium nam.
-                                        </p>
-                                        <p class="place-text">
-                                            <i class="fas fa-envelope" aria-hidden="true"></i>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quaerat enim praesentium nam.</p>
-                                    </div>
-                                    <a class="menu-places" href="#" target="_blank">
-                                        <i class="fas fa-coffee" aria-hidden="true"></i>
-                                        Check our menu</a>
-                                    <button class="location-button">Show on map</button>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="places">
-                                    <div class="place-top-bg">
-                                        <h3 class="place-header">Second lovely place</h3>
-                                    </div>
-                                    <div class="details">
-                                        <p class="place-text">
-                                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quaerat enim praesentium nam.
-                                        </p>
-                                        <p class="place-text">
-                                            <i class="fas fa-envelope" aria-hidden="true"></i>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quaerat enim praesentium nam.</p>
-                                    </div>
-                                    <a class="menu-places" href="#" target="_blank">
-                                        <i class="fas fa-coffee" aria-hidden="true"></i>
-                                        Check our menu</a>
-                                    <button class="location-button">Show on map</button>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="places">
-                                    <div class="place-top-bg">
-                                        <h3 class="place-header">Third lovely place</h3>
-                                    </div>
-                                    <div class="details">
-                                        <p class="place-text">
-                                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quaerat enim praesentium nam.
-                                        </p>
-                                        <p class="place-text">
-                                            <i class="fas fa-envelope" aria-hidden="true"></i>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quaerat enim praesentium nam.</p>
-                                    </div>
-                                    <a class="menu-places" href="#" target="_blank">
-                                        <i class="fas fa-coffee" aria-hidden="true"></i>
-                                        Check our menu</a>
-                                    <button class="location-button">Show on map</button>
-                                </div>
-                            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        
+        <!--ABOUT SECTION-->
+        
+        <section id="about">
+            <div class="section-wrapper">
+                <div class="container">
+                    
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <img class="place-photo" src="assets/img/1place.jpg" alt="coffeeshop-photo">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <h3 class="heading-text">
+                        Our history
+                    </h3>
+                            <p class="about-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, mollitia corrupti maiores temporibus sed ab, impedit ducimus, quis fugiat aperiam placeat libero voluptatum deleniti quod blanditiis optio ipsam architecto dolor!
+                            </p>
                         </div>
                     </div>
-
-                    <div class="col-lg-8 col-md-12 col-12">
-                        <div id="map"></div>
-                    </div>
-
-
                 </div>
+            </div>
+        </section>
+        
+        <!--PROMO SECTION-->
+        <section id="promo">
+            
+            <div class="section-wrapper">
+                <div class="container">
+                    
+                    <div class="row">
+                        
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <h3 class="heading-text">
+                    Visit our brand new place!
+                    </h3>
+                            <p class="about-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, mollitia corrupti maiores temporibus sed ab, impedit ducimus, quis fugiat aperiam placeat libero voluptatum deleniti quod blanditiis optio ipsam architecto dolor!
+                            </p>
+                            <div class="break-line">
+                            <hr class="break"> <img src="assets/img/bean.png" alt="logo"> <hr class="break">
+                            </div>
+                            <h3 class="subheading-text">
+                                Get your 10% promocode 
+                             </h3>
+                             <p>For your very first visit to our place</p>
+                            <form>
+                                <div class="form-group">
+                                    <label for="form-name">Name*</label>
+                                    <input type="text" name="name" class="form-control" id="form-name" placeholder="Coffeelover" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email">Email address*</label>
+                                    <input type="email" name="emailaddress" class="form-control" id="form-email" placeholder="name@example.com" required>
+                                </div>
+                                <div class="form-button">
+                                    <button type="submit" class="btn hvr-underline-from-center-mus">
+                                        Get a promocode
+                                    </button>
+                                   </div> 
+                            </form>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <img class="place-photo" src="assets/img/1place.jpg" alt="coffeeshop-photo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                <div class="content-text"></div>
+         <!--Locations SECTION-->
+        
+        <section id="places">
+            <div class="section-wrapper">
+                <div class="container">
+                    
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <img class="place-photo" src="assets/img/1place.jpg" alt="coffeeshop-photo">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <h3 class="heading-text">
+                        Our places
+                    </h3>
+                            <p class="about-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, mollitia corrupti maiores temporibus sed ab, impedit ducimus, quis fugiat aperiam placeat libero voluptatum deleniti quod blanditiis optio ipsam architecto dolor!
+                            </p>
+                            <button class="location-button">
+                                        Our locations
+                                        </button>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
 
-            <footer>
-                <div class="social-media">
-            <div class="sm-icon">
-                <a href="#" target="_blank">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-            </div>
-            <div class="sm-icon">
-                <a href="#" target="_blank">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-            </div>
-            <div class="sm-icon">
-                <a href="#" target="_blank">
-                    <i class="fab fa-pinterest-p" aria-hidden="true"></i>
-                </a>
-            </div>
+        <footer>
+            <div class="social-media">
+                <div class="sm-icon">
+                    <a href="#" target="_blank">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="sm-icon">
+                    <a href="#" target="_blank">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="sm-icon">
+                    <a href="#" target="_blank">
+                        <i class="fab fa-pinterest-p" aria-hidden="true"></i>
+                    </a>
+                </div>
             </div>
             <p class="footer-text">Holybean coffee 2021</p>
-                
 
 
-            </footer>
-
-        </div>
+        </footer>
 
 
         <!--JQuery-->
