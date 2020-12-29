@@ -219,12 +219,16 @@ bottom: 30%;
 
 .carousel-heading {
     text-transform: uppercase;
-    color: #763300;
+    color: #f9f8f6;
     font-family: "Montserrat", sans-serif;
     text-align: center;
     font-weight: 600;
-    box-shadow: #f9f8f6;
     margin-bottom: 2rem;
+}
+
+.carousel-item .location-button {
+    background-color: #f9f8f6;
+    font-weight: 600;
 }
 
 @media (max-width:1024px) {
@@ -296,6 +300,38 @@ bottom: 40%;
     margin-bottom: 30px;
 }
 
+.section-text {
+    font-family: "Lato", sans-serif;
+    margin-bottom: 5px;
+}
+
+.subheading-text {
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-weight: 600;
+    color: #763300;
+    margin-bottom: 16px;
+
+}
+
+#promo .place-photo {
+    height: 100%;
+}
+
+.form-group label {
+    font-family: "Lato", sans-serif;
+    font-weight: 500; 
+    color:  #763300;
+    margin-bottom: 5px;
+}
+
+#promo .location-button {
+    margin: 3px;
+    margin: 0 auto;
+}
+
+
 #promo .heading-text,
 #about .heading-text,
 #places .heading-text  {
@@ -326,10 +362,15 @@ margin-bottom: 1rem;
     width: 90%;
 }
 
+#subscription .section-text,
+#subscription .heading-text {
+    text-align: center;
+}
 
-
-
-
+#subscription .section-text {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
 
 
 
