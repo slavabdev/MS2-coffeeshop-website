@@ -202,38 +202,92 @@ html,body {
 
 /*CAROUSEL*/
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 100px;
-  width: 100px;
-  background-size: 100%, 100%;
-  background-image: none;
+.carousel-item {
+    max-height: 600px;
 }
 
-.carousel-control-next-icon:after
-{
-  content: '>';
-  font-size: 55px;
-  font-weight: 700;
-  color: #763300;
+.carousel-content {
+position: absolute;
+top: 40%;
+bottom: 30%;
+  left: 30%;
+  right: 30%;
+  z-index: 20;
+  padding: 5px;
+  
 }
 
-.carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 55px;
-  font-weight: 700;
-  color: #763300;
-}
-
-.carousel-indicators li {
+.carousel-heading {
+    text-transform: uppercase;
     color: #763300;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: #f9f8f6;
+    margin-bottom: 2rem;
 }
 
-.carousel img {
-  width: auto;
+@media (max-width:1024px) {
+    .carousel-content {
+position: absolute;
+top: 40%;
+bottom: 30%;
+  left: 25%;
+  right: 25%;
+  z-index: 20;
+  padding: 5px;
+  background: rgba(240, 240, 240, .7);
 }
+
+.carousel-heading {
+    font-size: 35px;
+}
+.carousel-content .location-button {
+    
+    font-size: 16px;
+}
+
+
+}
+
+@media (max-width:600px) {
+    .carousel-item {
+    margin-top: 50px;
+}
+    .carousel-content {
+position: absolute;
+top: 20%;
+bottom: 40%;
+  left: 15%;
+  right: 15%;
+  z-index: 20;
+  padding: 5px;
+  background: rgba(240, 240, 240, 1);
+}
+
+.carousel-heading {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.carousel-content .location-button {
+    font-size: 10px;
+}
+
+}
+
 
 /*ABOUT*/
+.place-photo {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.place-photo img {
+    height: 100%;
+    width: 100%;
+}
 
 /*PROMO SECTION*/
 
@@ -267,6 +321,17 @@ margin-bottom: 1rem;
     border-radius: 50%;
     padding-bottom: 5px;
 }
+
+.form-group {
+    width: 90%;
+}
+
+
+
+
+
+
+
 
 
 /*LOCATIONS*/
