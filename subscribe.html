@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HOLYBEAN COFFEE COMPANY</title>
+        <!--Bootsrap4-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <!--NAVIGATION-->
+        <header class="header">
+            <div class="content-container">
+                <div class="header-body">
+                    <a href="#" class="header-logo">
+                        <img src="assets/img/bean.png" alt="holybean_logo">
+                        HOLYBEAN
+                    </a>
+                    <div class="header-burger">
+                        <span></span>
+                    </div>
+                    <nav class="header-menu">
+                        <ul class="menu-list">
+                            <li>
+                                <a href="index.html" class="menu-item">Home</a>
+                            </li>
+                            <li>
+                                <a href="locations.html" class="menu-item">Coffeshops</a>
+                            </li>
+                            <li>
+                                <a href="subscribe.html" class="menu-item">Subscribe</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+
+        <!--SUBSCRIBE ABOUT SECTION-->
+
+        <div class="container">
+            <div class="section-wrapper">
+                <section id="subscribe-about">
+
+
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="place-photo">
+                                <img src="assets/img/about-img.jpg" alt="coffeeshop-photo">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <h3 class="heading-text">
+                                Our history
+                            </h3>
+                            <p class="section-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, mollitia corrupti maiores temporibus sed ab, impedit ducimus, quis fugiat aperiam placeat libero voluptatum deleniti quod blanditiis optio ipsam architecto dolor!
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!--COFFEE CALC-->
+            <div class="section-wrapper">
+                <section class="coffee-form">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <h5 class="coffee-form-heading">
+                                Get your 10% promocode for your very first visit to our place
+                            </h5>
+                            <p class="calc-text">Aut, tempora omnis maiores, dolorem molestias officiis illo dolorum numquam incidunt quaerat et labore deserunt! Neque, unde ut aperiam consequuntur odio ad!</p>
+                            <form>
+
+                                
+                                    <div class="form-group">
+                                        <p>What brewing method do you prefer?</p>
+
+                                        <input type="radio" id="brewChoice1" name="brewChoice" value="Aeropress">
+                                        <label for="brewChoice1">Aeropress</label>
+
+                                        <input type="radio" id="brewChoice2" name="brewChoice" value="Filter">
+                                        <label for="brewChoice2">Filter</label>
+
+                                        <input type="radio" id="brewChoice3" name="brewChoice" value="Frenchpress">
+                                        <label for="brewChoice3">French-press</label>
+
+                                        <input type="radio" id="brewChoice4" name="brewChoice" value="CoffeeMachine">
+                                        <label for="brewChoice4">Coffee-machine</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cups">How many cups do you drink per day:</label>
+                                        <br>
+                                        <input type="number" id="cups" name="cups" value="0">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="calc-taste">What taste of coffee do you prefer most?</label>
+                                        <br>
+                                        <select id="calc-taste" name="calc-taste" form="calc-taste">
+                                            <option value="bitter">Bitter</option>
+                                            <option value="sour">Sour</option>
+                                            <option value="fruity">Fruity</option>
+                                            <option value="floral">Floral</option>
+                                        </select>
+                                    </div>
+                                    <button type="submit" class="location-button">
+                                        Get a promocode
+                                    </button>
+                                
+                            </form>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="place-photo">
+                                <img class="place-photo" src="assets/img/promo.jpg" alt="coffeeshop-photo">
+                            </div>
+                        </div>
+
+
+                    </div>
+                </section>
+            </div>
+
+            <!--CONTACT FORM-->
+
+            <div class="section-wrapper">
+                <section class="coffee-form">
+                    <h5 class="coffee-form-heading">
+                        Get your 10% promocode for your very first visit to our place
+                    </h5>
+                    <p class="coffee-form-text">Aut, tempora omnis maiores, dolorem molestias officiis illo dolorum numquam incidunt quaerat et labore deserunt! Neque, unde ut aperiam consequuntur odio ad!</p>
+                    <form>
+                        <div class="row no-gutters">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="form-name">Name*</label>
+                                    <input type="text" name="name" class="form-control" id="form-name" placeholder="Coffeelover" required>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label for="form-email">Email address*</label>
+                                    <input type="email" name="emailaddress" class="form-control" id="form-email" placeholder="name@example.com" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phone">Phone*</label>
+                                    <input type="tel" name="phone" class="form-control" id="phone" placeholder="0861234567" pattern="[0-9]{10}" required>
+                                    <small>Format: 1234567890</small>
+
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="text">Additional information*</label>
+                                    <textarea name="form-text" rows="5" class="form-control" id="form-text"></textarea>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <button type="submit" class="location-button">
+                            Get a promocode
+                        </button>
+                    </form>
+                </section>
+            </div>
+
+
+        </div>
+
+
+        <!--FOOTER-->
+        <footer>
+            <div class="social-media">
+                <div class="sm-icon">
+                    <a href="#" target="_blank">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="sm-icon">
+                    <a href="#" target="_blank">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="sm-icon">
+                    <a href="#" target="_blank">
+                        <i class="fab fa-pinterest-p" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="footer-text">Holybean coffee 2021</p>
+
+
+        </footer>
+
+
+        <!--JQuery-->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <!--Font Awesome-->
+        <script src="https://kit.fontawesome.com/585c251878.js" crossorigin="anonymous"></script>
+
+        <script src="assets/js/script.js"></script>
+
+    </body>
+</html>

@@ -362,6 +362,19 @@ margin-bottom: 1rem;
     width: 90%;
 }
 
+/*SUBSCRIPTION*!!!!!!!!!*/ 
+
+.section-block {
+    background: url("../img/coffee-bg.jpg") no-repeat;
+    background-position: right;
+    background-size: cover;
+    -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        
+        
+}
+
 #subscription .section-text,
 #subscription .heading-text {
     text-align: center;
@@ -375,7 +388,8 @@ margin-bottom: 1rem;
 
 
 
-/*LOCATIONS*/
+
+/****************************************************LOCATIONS PAGE**************************************************************/
 .heading {
     max-width: 100%;
     height: auto;
@@ -583,6 +597,20 @@ button:focus {
         margin: 10px;
     }
 }
+
+
+
+/************************************SUBSCRIBTION PAGE******************************************************************/
+
+#subscribe-about {
+    padding-top: 30px;
+}
+
+#subscribe-about .heading-text {
+    padding-top: 0px;
+}
+
+
 
 /*FOOTER*/
 
