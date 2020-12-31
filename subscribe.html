@@ -65,58 +65,59 @@
 
             <!--COFFEE CALC-->
             <div class="section-wrapper">
-                
+
                 <section class="coffee-calc">
-                    
+
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-12">
                             <div class="coffee-calc-form">
-                            <h5 class="coffee-calc-heading">
-                                Check our coffee calculator and find out how much coffee do you need
-                            </h5>
-                            <form>
+                                <h5 class="coffee-calc-heading">
+                                    Check our coffee calc
+                                </h5>
+                                <p class="coffee-calc-text">Find out how much and what coffee suits you most.</p>
+                                <form action="" id="coffeeform">
                                     <div class="form-radio">
                                         <p>What brewing method do you prefer?</p>
                                         <div class="radio-buttons-all">
-                                        <div class="radio-buttons">
-                                        <input type="radio" id="brewChoice1" name="brewChoice" value="Aeropress">
-                                        <label for="brewChoice1">Aeropress</label>
-                                        </div>    
-                                        <div class="radio-buttons">
-                                        <input type="radio" id="brewChoice2" name="brewChoice" value="Filter">
-                                        <label for="brewChoice2">Filter</label>
+                                            <div class="radio-buttons">
+                                                <input type="radio" id="brewChoice1" name="brewChoice" value="Aeropress">
+                                                <label for="brewChoice1">Aeropress</label>
                                             </div>
-                                          <div class="radio-buttons">  
-                                        <input type="radio" id="brewChoice3" name="brewChoice" value="Frenchpress">
-                                        <label for="brewChoice3">French-press</label>
+                                            <div class="radio-buttons">
+                                                <input type="radio" id="brewChoice2" name="brewChoice" value="Filter">
+                                                <label for="brewChoice2">Filter</label>
                                             </div>
-                                            <div class="radio-buttons"> 
-                                        <input type="radio" id="brewChoice4" name="brewChoice" value="CoffeeMachine">
-                                        <label for="brewChoice4">Coffee-machine</label>
-                                            </div> 
+                                            <div class="radio-buttons">
+                                                <input type="radio" id="brewChoice3" name="brewChoice" value="FrenchPress">
+                                                <label for="brewChoice3">French-press</label>
                                             </div>
+                                            <div class="radio-buttons">
+                                                <input type="radio" id="brewChoice4" name="brewChoice" value="CoffeeMachine">
+                                                <label for="brewChoice4">Coffee-machine</label>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="form-cups">
                                         <label for="cups">How many cups do you drink per day:</label>
                                         <br>
                                         <input type="number" id="cups" name="cups" value="0" min="0">
-                                        
+
                                     </div>
                                     <div class="form-taste">
                                         <label for="calc-taste">What taste of coffee do you prefer most?</label>
                                         <br>
-                                        <select id="calc-taste" name="calc-taste" form="calc-taste">
+                                        <select id="calc-taste" name="calc-taste">
                                             <option value="bitter">Bitter</option>
                                             <option value="sour">Sour</option>
                                             <option value="fruity">Fruity</option>
                                             <option value="floral">Neutral</option>
                                         </select>
                                     </div>
-                                    <button type="submit" class="location-button">
+                                    <button onclick="getTotal()" type="submit" class="location-button">
                                         Get your result
                                     </button>
-                                
-                            </form>
+                                <div id="total"></div>
+                                </form>
                             </div>
                         </div>
 
@@ -125,8 +126,6 @@
                                 <img class="place-photo" src="assets/img/promo.jpg" alt="coffeeshop-photo">
                             </div>
                         </div>
-
-
                     </div>
                 </section>
             </div>
@@ -136,9 +135,9 @@
             <div class="section-wrapper">
                 <section class="coffee-form">
                     <h3 class="heading-text">
-                        Contact us to get your Holybean subscribtion 
+                        Contact us to get your Holybean subscribtion
                     </h3>
-                   
+
                     <form>
                         <div class="row no-gutters">
                             <div class="col-12">
@@ -212,6 +211,8 @@
         <script src="https://kit.fontawesome.com/585c251878.js" crossorigin="anonymous"></script>
 
         <script src="assets/js/script.js"></script>
+        <script src="assets/js/subscribe.js"></script>
+
 
     </body>
 </html>
