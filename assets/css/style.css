@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,500;0,900;1,700 &family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@300;400;500;600&display=swap');
 
 * {
     margin: 0;
@@ -113,7 +113,7 @@ body {
 }
 
 
-@media(max-width:767px) {
+@media(max-width:768px) {
 
 
     .header-body {
@@ -122,7 +122,6 @@ body {
 
     .header-burger {
         display: block;
-        position: relative;
         width: 30px;
         height: 20px;
         position: relative;
@@ -184,7 +183,7 @@ body {
         display: block;
     }
     .menu-list li {
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
     .menu-item {
         font-size: 24px;
@@ -197,7 +196,7 @@ body {
 }
 
 .section-wrapper {
-    margin: 4rem 0;
+    margin: 4rem 1rem;
 }
 
 
@@ -227,7 +226,7 @@ body {
     margin-bottom: 2rem;
 }
 
-/*-------Buttons---------*/
+/*-------Buttons main---------*/
 #main-subscription button,
 #places button,
 .carousel-item button {
@@ -248,6 +247,21 @@ body {
 #places button:hover > a,
 .carousel-item button:hover > a {
     color: #763300;
+}
+
+@media (max-width:600px) {
+#main-subscription button,
+#places button,
+.carousel-item button {
+    padding: 4px 10px;
+    margin-top: 5px;
+}
+#main-subscription button a,
+#places button a,
+.carousel-item button a {
+    font-size: 10px;
+}
+
 }
 
 /*-------carousel media queries---------*/
@@ -302,10 +316,15 @@ body {
     overflow: hidden;
 }
 
-
 .place-photo img {
     height: 100%;
     width: 100%;
+}
+
+@media(max-width:600px){
+    #about .section-text {
+        margin-bottom: 5px;
+    }
 }
 
 /*PROMO SECTION*/
@@ -342,9 +361,15 @@ body {
 }
 
 #promo .location-button {
+    background-color: #763300;
+    color: #f9f8f6;
     margin: 0 auto;
 }
 
+#promo .location-button:hover {
+    background-color: #f9f8f6;
+    color: #763300;
+}
 
 #promo .heading-text,
 #about .heading-text,
@@ -376,11 +401,56 @@ body {
     width: 90%;
 }
 
-/*SUBSCRIPTION*!!!!!!!!!*/
+@media(min-width:768px) {
+#promo .place-photo {
+    height: 90%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    top: 5%;
+    right: 0%;
+    left: 0%;
+}
+}
+
+@media(max-width:767px) {
+#promo .place-photo {
+    height: 90%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    top: 5%;
+    right: 2%;
+}
+}
+
+/*form media queries*/
+@media(max-width:600px) {
+    .form-group label {
+        font-size: 12px;
+    }
+
+    #promo .form-group {
+        width: 100%;
+    }
+
+    #promo .location-button {
+        padding: 4px 10px;
+        font-size: 10px;
+    }
+
+    .promo-form .form-control {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+}
+
+/*-----------------SUBSCRIPTION main--------------*/
 
 .subs-section-block {
     position: relative;
-width: 100%;
+    width: 100%;
 
 }
 
@@ -412,7 +482,7 @@ width: 100%;
 }
 
 
-/****************************************************LOCATIONS PAGE**************************************************************/
+/*-----------------LOCATIONS PAGE-----------------------------*/
 .heading {
     max-width: 100%;
     height: auto;
@@ -428,7 +498,7 @@ width: 100%;
     color: #763300;
 
 }
-
+.wrapper-loc,
 .wrapper {
     margin-left: 50px;
     margin-right: 50px;
@@ -455,6 +525,7 @@ width: 100%;
     padding: 20px 0;
     font: 20px 'Montserrat', sans-serif;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .place-top-bg h3 {
@@ -599,7 +670,7 @@ button:focus {
     }
 }
 
-@media(max-width:767px) {
+@media(max-width:768px) {
     #map {
         width: auto;
         height: 400px;
@@ -614,9 +685,12 @@ button:focus {
 
 /* MEDIA QUERIES FOR LOCATIONS*/
 
-@media(max-width:767px) {
-    .wrapper {
-        margin: 10px;
+@media(max-width:600px) {
+    .wrapper-loc {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
@@ -629,16 +703,11 @@ button:focus {
 }
 
 #subscribe-about .heading-text {
-    padding-top: 0;
+    padding-top: 20px;
 }
 
 @media(max-width:767px) {
-    #subscribe-about .heading-text {
-        display: none;
-    }
-    #subscribe-about .heading-text:before {
-        content: 'Coffee subscribtion';
-    }
+    
 }
 
 
@@ -658,6 +727,8 @@ button:focus {
     font-weight: 600;
     padding-top: 5px;
 }
+
+/*CALC*/
 
 .coffee-calc-form {
     position: relative;
@@ -734,6 +805,10 @@ button:focus {
     padding: 5px;
 }
 
+#contact-form .form-group {
+    width: 100%;
+}
+
 .coffee-form .heading-text {
     text-align: center;
     margin-bottom: 2rem;
@@ -767,7 +842,7 @@ input[type=email]:focus {
 
 footer {
     width: 100%;
-    height: 6rem;
+    height: 6.2rem;
     background-color: #5e5553;
     margin-top: 1.5rem;
 
@@ -811,7 +886,7 @@ footer {
 }
 
 .footer-text {
-    margin: 0 2.5rem 0 0;
+    margin: 0 2.5rem 15px 0;
     text-align: center;
     font-family: "Lato", sans-serif;
     font-size: 12px;
@@ -820,12 +895,32 @@ footer {
     padding-bottom: 0.2rem;
 }
 
-@media(max-width:767px) {
+@media(max-width:768px) {
     .sm-icon {
         margin-right: 1rem;
+        font-size: 12px;
     }
     .footer-text {
         margin-right: 1rem;
+        font-size: 12px;
+    }
+}
+
+@media(max-width:600px) {
+    .sm-icon {
+        margin-right: 1rem;
+        
+    }
+
+    .sm-icon a {
+        font-size: 17px;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .footer-text {
+        margin-right: 0.8rem;
+        font-size: 10px;
     }
 }
 
@@ -839,7 +934,7 @@ footer {
         text-align: center;
     }
     .section-wrapper {
-        margin: 40px 0;
+        margin: 40px 20px;
     }
 }
 
@@ -848,12 +943,12 @@ footer {
         margin: 14px 0;
     }
 
-     #promo .heading-text {
-        margin-bottom: 0px;
+    #promo .heading-text {
+        margin-bottom: 0;
         text-align: center;
-     }
-     .section-wrapper {
-        margin: 30px 0;
+    }
+    .section-wrapper {
+        margin: 30px 30px;
     }
 }
 
@@ -865,7 +960,7 @@ footer {
         font-size: 20px;
         text-align: center;
     }
-    button .location-button {
+    button .location-button a {
         font-size: 14px;
     }
 }
