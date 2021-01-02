@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,500;0,900;1,700&family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,500;0,900;1,700 &family=Montserrat:wght@400;500;700&display=swap');
 
 * {
     margin: 0;
@@ -7,20 +7,21 @@
     box-sizing: border-box;
 }
 
-html,body {
+html,
+body {
     height: 100%;
 }
 
 .wrapper {
-    padding: 0px 50px;
+    padding: 0 50px;
 }
 
 
 /*-------NAVBAR------*/
 .content-container {
     max-width: 1180px;
-    margin: 0px auto;
-    padding: 0px 10px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 .header {
@@ -38,7 +39,7 @@ html,body {
     height: 100%;
     top: 0;
     left: 0;
-    background-color:  #f9f8f6;
+    background-color: #f9f8f6;
     opacity: 0.9;
     z-index: 2;
 }
@@ -88,7 +89,7 @@ html,body {
     position: relative;
     z-index: 2;
     margin-bottom: 0;
-} 
+}
 
 
 .menu-list li {
@@ -107,18 +108,18 @@ html,body {
 }
 
 .menu-item:hover {
- text-decoration: none;
- color: #d7b787;
+    text-decoration: none;
+    color: #d7b787;
 }
 
 
-@media (max-width:767px) {
-   
-   
+@media(max-width:767px) {
+
+
     .header-body {
         height: 50px;
     }
-    
+
     .header-burger {
         display: block;
         position: relative;
@@ -158,11 +159,11 @@ html,body {
     }
     .header-burger.active:before {
         transform: rotate(45deg);
-        top:9px;    
+        top: 9px;
     }
     .header-burger.active:after {
         transform: rotate(-45deg);
-        bottom: 9px;    
+        bottom: 9px;
     }
     .header-menu {
         position: fixed;
@@ -173,7 +174,7 @@ html,body {
         overflow: auto;
         transition: all 0.3s ease;
         background-color: #f9f8f6;
-        padding: 70px 10px 20px 10px;
+        padding: 70px 10px 20px;
         text-align: center;
     }
     .header-menu.active {
@@ -188,33 +189,33 @@ html,body {
     .menu-item {
         font-size: 24px;
     }
-        
+
 }
 
 .content {
     padding-top: 60px;
 }
 
- .section-wrapper {
-     margin: 4rem 0px;
- }
+.section-wrapper {
+    margin: 4rem 0;
+}
 
 
-/*CAROUSEL*/
+/*-----------------CAROUSEL---------------*/
 
 .carousel-item {
     max-height: 600px;
 }
 
 .carousel-content {
-position: absolute;
-top: 40%;
-bottom: 30%;
-  left: 30%;
-  right: 30%;
-  z-index: 20;
-  padding: 5px;
-  
+    position: absolute;
+    top: 40%;
+    bottom: 30%;
+    left: 30%;
+    right: 30%;
+    z-index: 20;
+    padding: 5px;
+
 }
 
 .carousel-heading {
@@ -226,62 +227,76 @@ bottom: 30%;
     margin-bottom: 2rem;
 }
 
-.carousel-item .location-button {
-    background-color: #f9f8f6;
-    font-weight: 600;
+/*-------Buttons---------*/
+#main-subscription button,
+#places button,
+.carousel-item button {
+    background-color: #763300;
+}
+#main-subscription button a,
+#places button a,
+.carousel-item button a {
+    text-decoration: none;
+    color: #f9f8f6;
+}
+#main-subscription button:hover,
+#places button:hover,
+.carousel-item button:hover {
+    background: #f9f8f6;
+}
+#main-subscription button:hover >a,
+#places button:hover > a,
+.carousel-item button:hover > a {
+    color: #763300;
 }
 
-@media (max-width:1024px) {
+/*-------carousel media queries---------*/
+
+@media(max-width:1024px) {
     .carousel-content {
-position: absolute;
-top: 40%;
-bottom: 30%;
-  left: 25%;
-  right: 25%;
-  z-index: 20;
-  padding: 5px;
-  background: rgba(240, 240, 240, .7);
-}
-
-.carousel-heading {
-    font-size: 35px;
-}
-.carousel-content .location-button {
-    
-    font-size: 16px;
-}
-
+        position: absolute;
+        top: 35%;
+        bottom: 40%;
+        left: 15%;
+        right: 15%;
+        z-index: 20;
+        padding: 5px;
+    }
+    .carousel-heading {
+        font-size: 20px;
+    }
+    .location-button {
+        font-size: 16px;
+    }
 
 }
 
-@media (max-width:600px) {
+@media(max-width:600px) {
     .carousel-item {
-    margin-top: 50px;
-}
+        margin-top: 50px;
+    }
     .carousel-content {
-position: absolute;
-top: 20%;
-bottom: 40%;
-  left: 15%;
-  right: 15%;
-  z-index: 20;
-  padding: 5px;
-  background: rgba(240, 240, 240, 1);
+        position: absolute;
+        top: 30%;
+        bottom: 40%;
+        left: 15%;
+        right: 15%;
+        z-index: 20;
+        padding: 5px;
+    }
+
+    .carousel-heading {
+        font-size: 12px;
+        font-weight: 600;
+        margin-bottom: 4px;
+    }
+    .carousel-content .location-button {
+        font-size: 10px;
+    }
+
 }
 
-.carousel-heading {
-    font-size: 12px;
-    font-weight: 600;
-    margin-bottom: 4px;
-}
-.carousel-content .location-button {
-    font-size: 10px;
-}
-
-}
-
-
-/*ABOUT*/
+/*-------ABOUT---------*/
 .place-photo {
     width: 100%;
     overflow: hidden;
@@ -321,33 +336,32 @@ bottom: 40%;
 
 .form-group label {
     font-family: "Lato", sans-serif;
-    font-weight: 500; 
-    color:  #763300;
+    font-weight: 500;
+    color: #763300;
     margin-bottom: 5px;
 }
 
 #promo .location-button {
-    margin: 3px;
     margin: 0 auto;
 }
 
 
 #promo .heading-text,
 #about .heading-text,
-#places .heading-text  {
-    padding-top: 0px;
+#places .heading-text {
+    padding-top: 0;
     margin-bottom: 1rem;
 }
 
 .break-line {
-text-align: center;
-margin-bottom: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 .break {
     display: inline-block;
     width: 20%;
     margin-bottom: 8px;
-    
+
 }
 
 .break-line img {
@@ -362,31 +376,40 @@ margin-bottom: 1rem;
     width: 90%;
 }
 
-/*SUBSCRIPTION*!!!!!!!!!*/ 
+/*SUBSCRIPTION*!!!!!!!!!*/
 
-.section-block {
+.subs-section-block {
+    position: relative;
+width: 100%;
+
+}
+
+.subs-section-block:after {
+    content: " ";
     background: url("../img/coffee-bg.jpg") no-repeat;
     background-position: right;
     background-size: cover;
     -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        
-        
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 10%;
+    right: 15%;
+    z-index: -1;
+    opacity: 0.3;
 }
 
-#subscription .section-text,
-#subscription .heading-text {
+#main-subscription .section-text,
+#main-subscription .heading-text {
     text-align: center;
 }
 
-#subscription .section-text {
+#main-subscription .section-text {
     margin-bottom: 10px;
     margin-top: 10px;
 }
-
-
-
 
 
 /****************************************************LOCATIONS PAGE**************************************************************/
@@ -394,16 +417,16 @@ margin-bottom: 1rem;
     max-width: 100%;
     height: auto;
     text-align: center;
-    
+
 }
 
 .heading-text {
-    
+
     padding-top: 20px;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     color: #763300;
-    
+
 }
 
 .wrapper {
@@ -419,23 +442,23 @@ margin-bottom: 1rem;
     height: auto;
 }
 
-.place-top-bg  {
-  position: relative;
-  height: 70px;
-  background-image: linear-gradient(#f9f8f6, #d7b787);
-  border-bottom-left-radius: 50% 20%;
-  border-bottom-right-radius: 50% 20%;
+.place-top-bg {
+    position: relative;
+    height: 70px;
+    background-image: linear-gradient(#f9f8f6, #d7b787);
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
 }
 
 .place-header {
-  margin: 0;
-  padding: 20px 0;
-  font: 20px 'Montserrat', sans-serif ;
-  text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    font: 20px 'Montserrat', sans-serif;
+    text-align: center;
 }
 
 .place-top-bg h3 {
-  color: #763300;
+    color: #763300;
 }
 
 .place-text {
@@ -443,7 +466,7 @@ margin-bottom: 1rem;
     font-size: 12px;
     padding: 5px 10px;
     margin-left: 10px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     font-family: "Lato", sans-serif;
 }
 
@@ -453,9 +476,9 @@ margin-bottom: 1rem;
 }
 
 .fa-envelope:before {
-   margin-right: 10px; 
+    margin-right: 10px;
 }
-.fa-map-marker-alt:before  {
+.fa-map-marker-alt:before {
     margin-right: 10px;
 }
 .fa-coffee:before {
@@ -496,7 +519,7 @@ margin-bottom: 1rem;
     border: solid 1px #763300;
     font-weight: 400;
     margin: 10px auto;
-    
+
     background-color: white;
     cursor: pointer;
     text-transform: uppercase;
@@ -526,17 +549,16 @@ button:focus {
 .popup-header {
     color: #763300;
     text-transform: uppercase;
-    margin: 0 auto;
+    margin: 0 auto 8px;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    margin-bottom: 8px;
 }
 
 .popup-content {
     font-size: 14px;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    padding: 0px 5px;
+    padding: 0 5px;
     margin-bottom: 8px;
     line-height: 1.7;
     text-align: center;
@@ -545,7 +567,7 @@ button:focus {
 .popup-link {
     text-align: center;
     font-family: "Lato", sans-serif;
-    padding: 0px 5px;
+    padding: 0 5px;
     color: #5e5553;
     text-decoration: none;
     font-weight: 600;
@@ -555,7 +577,7 @@ button:focus {
 
 .popup-link-promo {
     display: inline;
-    padding: 0px;
+    padding: 0;
 }
 
 .popup-link-promo:hover,
@@ -570,14 +592,14 @@ button:focus {
     font-family: "Lato", sans-serif;
 }
 
-@media (max-width:1024px) {
+@media(max-width:1024px) {
     #map {
         width: auto;
         height: 300px;
     }
 }
 
-@media (max-width:767px) {
+@media(max-width:767px) {
     #map {
         width: auto;
         height: 400px;
@@ -592,28 +614,55 @@ button:focus {
 
 /* MEDIA QUERIES FOR LOCATIONS*/
 
-@media (max-width:767px) {
-    .wrapper{
+@media(max-width:767px) {
+    .wrapper {
         margin: 10px;
     }
 }
 
 
-
 /************************************SUBSCRIBTION PAGE******************************************************************/
+
 
 #subscribe-about {
     padding-top: 30px;
 }
 
 #subscribe-about .heading-text {
-    padding-top: 0px;
+    padding-top: 0;
+}
+
+@media(max-width:767px) {
+    #subscribe-about .heading-text {
+        display: none;
+    }
+    #subscribe-about .heading-text:before {
+        content: 'Coffee subscribtion';
+    }
+}
+
+
+.coffee-calc-heading {
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    color: #763300;
+    font-weight: 600;
+    padding-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.coffee-calc-text {
+    font-size: 14px;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    padding-top: 5px;
 }
 
 .coffee-calc-form {
     position: relative;
     width: 100%;
-    
+
 }
 
 .coffee-calc-form:after {
@@ -622,25 +671,25 @@ button:focus {
     background-position: right;
     background-size: cover;
     -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover; 
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        z-index: -1;
-        opacity: 0.3;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.3;
 }
 .form-cups label,
 .form-taste label,
-.coffee-calc .form-radio p{
+.coffee-calc .form-radio p {
     font-family: "Lato", sans-serif;
-    font-weight: 400; 
-    color:  #763300; 
+    font-weight: 400;
+    color: #763300;
 }
 
-.coffee-calc .place-photo{
+.coffee-calc .place-photo {
     height: 100%;
 }
 
@@ -650,9 +699,8 @@ button:focus {
 .form-radio,
 .form-cups,
 .form-taste {
- margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
-
 
 
 .form-radio label {
@@ -661,7 +709,7 @@ button:focus {
 
 .coffee-calc .form-group p {
     font-family: "Lato", sans-serif;
-    font-weight: 500; 
+    font-weight: 500;
     color: #212529;
     margin-bottom: 5px;
 }
@@ -678,7 +726,7 @@ button:focus {
 }
 
 #calc-taste,
-#cups  {
+#cups {
     width: 100%;
     background-color: #d7b787;
     font-family: "Lato", sans-serif;
@@ -689,14 +737,15 @@ button:focus {
 .coffee-form .heading-text {
     text-align: center;
     margin-bottom: 2rem;
+    padding: 0;
 }
 input[type=text]:focus,
 input[type=tel]:focus,
 input[type=email]:focus {
-  border: 3px solid #aaa7a2;
-  color: #212529;
-  box-shadow: none;
-  font-family: "Lato", sans-serif;
+    border: 3px solid #aaa7a2;
+    color: #212529;
+    box-shadow: none;
+    font-family: "Lato", sans-serif;
 }
 
 .form-control:focus {
@@ -706,7 +755,12 @@ input[type=email]:focus {
 
 }
 
-
+#coffeeSubForm button:focus {
+    color: #763300;
+    border: solid 3px #763300;
+    background-color: #f9f8f6;
+    font-weight: 600;
+}
 
 
 /*FOOTER*/
@@ -716,14 +770,14 @@ footer {
     height: 6rem;
     background-color: #5e5553;
     margin-top: 1.5rem;
-    
+
 }
 
 .social-media {
     display: flex;
     justify-content: center;
     color: #f9f8f6;
-    
+
 }
 
 .sm-icon {
@@ -732,7 +786,7 @@ footer {
     margin-right: 3rem;
     text-decoration: none;
     color: #f9f8f6;
-    
+
 
 }
 
@@ -740,39 +794,78 @@ footer {
     color: #f9f8f6;
     font-size: 1.7rem;
     border-radius: 50%;
-    border:solid #f9f8f6;;
+    border: solid #f9f8f6;
     width: 3rem;
     height: 3rem;
     text-align: center;
-    
+
     display: inline-block;
-    
+
 }
 
 .sm-icon a:hover,
-.sm-icon a:focus
- {
-    background-color:#f9f8f6;
+.sm-icon a:focus {
+    background-color: #f9f8f6;
     color: #d7b787;
     transition: all 0.2s ease-in;
 }
 
 .footer-text {
-    margin:0;
+    margin: 0 2.5rem 0 0;
     text-align: center;
     font-family: "Lato", sans-serif;
     font-size: 12px;
     color: #f9f8f6;
     text-transform: uppercase;
-    margin-right: 2.5rem;
     padding-bottom: 0.2rem;
 }
 
-@media (max-width:767px) {
-    .sm-icon{
+@media(max-width:767px) {
+    .sm-icon {
         margin-right: 1rem;
     }
     .footer-text {
         margin-right: 1rem;
+    }
+}
+
+/*-----Common media queries------*/
+@media(max-width:1024px) {
+    .section-text {
+        font-size: 14px;
+    }
+    .heading-text {
+        font-size: 23px;
+        text-align: center;
+    }
+    .section-wrapper {
+        margin: 40px 0;
+    }
+}
+
+@media(max-width:768px) {
+    .section-text {
+        margin: 14px 0;
+    }
+
+     #promo .heading-text {
+        margin-bottom: 0px;
+        text-align: center;
+     }
+     .section-wrapper {
+        margin: 30px 0;
+    }
+}
+
+@media(max-width:600px) {
+    .section-text {
+        font-size: 12px;
+    }
+    .heading-text {
+        font-size: 20px;
+        text-align: center;
+    }
+    button .location-button {
+        font-size: 14px;
     }
 }

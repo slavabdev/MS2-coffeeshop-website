@@ -13,7 +13,7 @@
         <header class="header">
             <div class="content-container">
                 <div class="header-body">
-                    <a href="#" class="header-logo">
+                    <a href="index.html" class="header-logo">
                         <img src="assets/img/bean.png" alt="holybean_logo">
                         HOLYBEAN
                     </a>
@@ -29,15 +29,14 @@
                                 <a href="locations.html" class="menu-item">Coffeshops</a>
                             </li>
                             <li>
-                                <a href="subscribe.html" class="menu-item">Subscribe</a>
+                                <a href="subscribe_copy.html" class="menu-item">Subscribe</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
             </div>
-
-           <!--SLIDER--> 
         </header>
+         <!--SLIDER--> 
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -49,8 +48,10 @@
                     <img class="d-block w-100" src="assets/img/sliderbg--1.jpg" alt="First slide">
                     <div class="carousel-content">
                         <h3 class="carousel-heading">GET a discount in our new coffeeshop</h3>
-                        <button type="submit" class="location-button">
-                            Get a promocode
+                       <button type="button" class="location-button">
+                            <a href="subscribe.html">
+                                Get a promocode
+                            </a>  
                         </button>
 
                     </div>
@@ -61,8 +62,10 @@
                     <img class="d-block w-100" src="assets/img/sliderbg--2.jpg" alt="Second slide">
                     <div class="carousel-content">
                         <h3 class="carousel-heading">subscribe to our monthly coffee delivery </h3>
-                        <button type="submit" class="location-button">
-                            Get a promocode
+                        <button type="button" class="location-button">
+                            <a href="subscribe.html">
+                                Learn more
+                            </a>  
                         </button>
 
                     </div>
@@ -72,8 +75,10 @@
                     <div class="carousel-content">
                         <h3 class="carousel-heading">Find our the nearest coffeeshop to you</h3>
                         
-                        <button type="submit" class="location-button">
-                            Get the location
+                       <button type="button" class="location-button">
+                            <a href="subscribe.html">
+                                Go to locations
+                            </a>  
                         </button>
 
                     </div>
@@ -94,7 +99,9 @@
         <section id="about">
             <div class="section-wrapper">
                 <div class="container">
-
+                <h3 class="heading-text">
+                                Our history
+                            </h3>
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-12">
                             <div class="place-photo">
@@ -102,9 +109,7 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-12">
-                            <h3 class="heading-text">
-                                Our history
-                            </h3>
+                            
                             <p class="section-text">
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, mollitia corrupti maiores temporibus sed ab, impedit ducimus, quis fugiat aperiam placeat libero voluptatum deleniti quod blanditiis optio ipsam architecto dolor!
                             </p>
@@ -119,15 +124,15 @@
 
             <div class="section-wrapper">
                 <div class="container">
-
+<h3 class="heading-text">
+                                Visit our brand new place!
+                            </h3>
                     <div class="row">
 
                         <div class="col-lg-6 col-md-6 col-12">
-                            <h3 class="heading-text">
-                                Visit our brand new place!
-                            </h3>
+                            
                             <p class="section-text">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, mollitia corrupti maiores temporibus sed ab, impedit ducimus, quis fugiat aperiam placeat libero voluptatum deleniti quod blanditiis optio ipsam architecto dolor!
+                                Odio, mollitia corrupti maiores temporibus sed ab, impedit ducimus, quis fugiat aperiam placeat libero voluptatum deleniti quod blanditiis optio ipsam architecto dolor!
                             </p>
                             <div class="break-line">
                                 <hr class="break">
@@ -163,7 +168,7 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="col-lg-6 col-12">
+                        <div class="col-lg-6 col-md-6 d-md-block d-none">
                             <div class="place-photo">
                                 <img class="place-photo" src="assets/img/promo.jpg" alt="coffeeshop-photo">
                             </div>
@@ -178,7 +183,9 @@
         <section id="places">
             <div class="section-wrapper">
                 <div class="container">
-
+<h3 class="heading-text">
+                                Our places
+                            </h3>
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-12">
                             <div class="place-photo">
@@ -186,15 +193,15 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-12">
-                            <h3 class="heading-text">
-                                Our places
-                            </h3>
+                            
                             <p class="section-text">
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, mollitia corrupti maiores temporibus sed ab, impedit ducimus, quis fugiat aperiam placeat libero voluptatum deleniti quod blanditiis optio ipsam architecto dolor!
                             </p>
-                            <button class="location-button">
-                                Our locations
-                            </button>
+                            <button type="button" class="location-button">
+                            <a href="locations.html">
+                                Go to locations
+                            </a>  
+                        </button>
                         </div>
                     </div>
                 </div>
@@ -203,9 +210,10 @@
 
         <!--SUBSCRIBTION-->
 
-        <section id="subscription">
+        <section id="main-subscription">
+            <div class="subs-section-block">
             <div class="section-wrapper">
-                <div class="container">
+                <div class="container-fluid">
             <h3 class="heading-text">Staying home?</h3>
                     <p class="section-text">
                                 Check our outstanding coffee subscription option!
@@ -214,12 +222,14 @@
                                 Click the button below and we will help you to choose the best coffee for you! 
                             </p>
 
-                            <button class="location-button">
-                                choose your coffee
-                            </button>
+                            <button type="button" class="location-button">
+                            <a href="locations.html">
+                                Choose your coffee
+                            </a>  
+                        </button>
             </div>
                 </div>
-
+</div>
         </section>
 
 <!--FOOTER-->
