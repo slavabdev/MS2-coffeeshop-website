@@ -196,7 +196,7 @@ body {
 }
 
 .section-wrapper {
-    margin: 4rem 1rem;
+    margin: 40px 20px;
 }
 
 
@@ -311,6 +311,11 @@ body {
 }
 
 /*-------ABOUT---------*/
+
+#about {
+    overflow: hidden;
+}
+
 .place-photo {
     width: 100%;
     overflow: hidden;
@@ -329,10 +334,8 @@ body {
 
 /*PROMO SECTION*/
 
-#promo {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
+
+
 
 .section-text {
     font-family: "Lato", sans-serif;
@@ -401,7 +404,8 @@ body {
     width: 90%;
 }
 
-@media(min-width:768px) {
+
+@media(max-width:1024px) {
 #promo .place-photo {
     height: 90%;
     width: 100%;
@@ -413,7 +417,7 @@ body {
 }
 }
 
-@media(max-width:767px) {
+@media(max-width:768px) {
 #promo .place-photo {
     height: 90%;
     width: 100%;
@@ -451,12 +455,11 @@ body {
 .subs-section-block {
     position: relative;
     width: 100%;
-
 }
 
 .subs-section-block:after {
     content: " ";
-    background: url("../img/coffee-bg.jpg") no-repeat;
+    background: url("../img/coffee-bg.jpg") no-repeat fixed;
     background-position: right;
     background-size: cover;
     -webkit-background-size: cover;
@@ -481,6 +484,11 @@ body {
     margin-top: 10px;
 }
 
+@media(max-width:768px){
+    .subs-section-block:after{
+        background-attachment: scroll;
+    }
+}
 
 /*-----------------LOCATIONS PAGE-----------------------------*/
 .heading {
@@ -963,4 +971,23 @@ footer {
     button .location-button a {
         font-size: 14px;
     }
+}
+
+
+
+/***Slide in***/
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s;
+}
+.already-visible {
+  transform: translateY(0);
+  animation: none;
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
 }

@@ -1,52 +1,35 @@
-//COFFEE CALCULATOR 
+$('#myModal').on('show.bs.modal', function (e) {
+var button = e.relatedTarget;
+if($("#submitForm").val().length==0) {
+e.stopPropegation();
+}  
+});
 
 
-let myform = document.forms["coffeeform"]
 
-let brewChoice = [
-    ['Aeropress'] = 6,
-    ['Filter']=7,
-    ['FrenchPress']=9,
-    ['CoffeeMachine']=12
-];
 
-let getCoffee = function getCoffeeBrew () {
-    let coffeeType = 0;
-    let myform = document.forms["coffeeform"];
-    let brewStyle = myform.elements['brewChoice']
-    let i;
-    for (i=0; i<brewStyle.length; i++) {
-        if(brewStyle[i].checked) {
-            coffeeType = brewChoice[brewStyle[i].value];
-            break;
-        }
-    }
-    return coffeeType;
 
+
+/*let cupCup = function cup () {
+    let cups = document.getElementById('cups').value;
 }
 
-let cups = document.getElementById('cups').value;
+let brewBrew = function brew (){
+ let brewStyle = document.querySelectorAll('input[name="brewChoice"]')
+ let selectedBrew;
+ for (let brew of brewStyle){
+     if(brew.checked){
+         selectedBrew=brew.value;
+     }
+ }
 
 
-let coffeeTaste = [
-    ['bitter'] = 'Columbia', 
-    ['sour'] = 'Kenya', 
-    ['fruity']= 'Rwanda', 
-    ['floral'] = 'Brazil'
-];
 
-let coffeeTaste = function getCoffeeTaste () {
-    let CoffeeBrewTaste = '';
-    let myform = document.forms["coffeeform"];
-    let selectedTaste = myForm.elements['calc-taste'];
-
-    CoffeeBrewTaste = coffeeTaste[selectedTaste.value];
-    return CoffeeBrewTaste;
+ break
 }
 
-
-function getTotal() {
-    let coffeeResult = getCoffee * cups / 250;
-
-    document.getElementById('total').innerHTML = (`you need ${coffeeResult} gramms of coffee. Choose ${cofeeTaste}`)
+btn.onclick = function calc() {
+   let result = cupCup * brewBrew / 250;
+     document.getElementById('my-total').innerHTML = (`asdasdasd ${result}`);
 }
+*/
