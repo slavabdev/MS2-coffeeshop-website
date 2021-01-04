@@ -37,15 +37,14 @@
             </div>
         </header>
 
-
         <!--SUBSCRIBE ABOUT SECTION-->
 
         <div class="container">
             <div class="section-wrapper">
                 <section id="subscribe-about">
                     <h3 class="slide-mod heading-text">
-                                Coffee subscribtion
-                            </h3>
+                        Coffee subscribtion
+                    </h3>
 
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-12">
@@ -54,80 +53,96 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-12">
-                            
+
                             <p class="slide-mod section-text">
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, mollitia corrupti maiores temporibus sed ab, impedit ducimus, quis fugiat aperiam placeat libero voluptatum deleniti quod blanditiis optio ipsam architecto dolor!
                             </p>
+                            <button onclick="toggleFunction()" class="location-button ">Check options</button>
+
                         </div>
                     </div>
                 </section>
             </div>
 
-            <!--COFFEE CALC-->
-            <div class="section-wrapper">
+            <!--Subscribe options-->
 
-                <section class="coffee-calc">
-
+            <section id="subscribe-opt">
+                <div class="container">
                     <div class="row">
-                        <div class="col-12">
-                            <div class="coffee-calc-form">
-                                   <h3 class="heading-text">
-                        Contact us to get your Holybean subscribtion
-                    </h3>
-
-                                
-                               <form id="contact-form">
-                        <div class="row no-gutters">
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <label for="form-name">Name*</label>
-                                    <input type="text" name="name" class="form-control" id="form-name" placeholder="Coffeelover" required>
-                                </div>
-
-
-                                <div class="form-group">
-                                    <label for="form-email">Email address*</label>
-                                    <input type="email" name="emailaddress" class="form-control" id="form-email" placeholder="name@example.com" required>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="phone">Phone*</label>
-                                    <input type="tel" name="phone" class="form-control" id="phone" placeholder="0861234567" pattern="[0-9]{10}" required>
-                                    <small>Format: 1234567890</small>
-
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="text">Additional information*</label>
-                                    <textarea name="form-text" rows="5" class="form-control" id="form-text"></textarea>
-
-                                </div>
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="sub-options">
+                                <h6 class="subheading-text">Bright option</h6>
+                                <p class="section-text">Only bright, juicy sorts of coffee with fruity acidity.
+                                </p>
+                                <button type="button" class="location-button">Bright</button>
                             </div>
                         </div>
-                        <button type="submit" class="location-button">
-                            Contact us
-                        </button>
-                        
-                    </form>
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="sub-options">
+                                <h6 class="subheading-text">Soft option</h6>
+                                <p class="section-text">The best of soft, balanced, sweet varieties of coffee.
+                                </p>
+                                <button type="button" class="location-button">Soft</button>
                             </div>
                         </div>
 
-
-                        
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="sub-options">
+                                <h6 class="subheading-text">Unique option</h6>
+                                <p class="section-text">Experimental and exclusive coffees with powerful and unusual flavors.
+                                </p>
+                                <button type="button" onclick="addtext('I would like to consider your unique option');" class="location-button">Unique</button>
+                            </div>
+                        </div>
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
 
             <!--CONTACT FORM-->
-
             <div class="section-wrapper">
                 <section class="coffee-form">
-                 
-                    
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="heading-text">
+                                Contact us to get your Holybean subscribtion
+                            </h3>
+                            <form id="contact-form">
+                                <div class="row no-gutters">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="form-name">Name*</label>
+                                            <input type="text" name="name" class="form-control" id="form-name" placeholder="Coffeelover" required>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label for="form-email">Email address*</label>
+                                            <input type="email" name="emailaddress" class="form-control" id="form-email" placeholder="name@example.com" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="phone">Phone*</label>
+                                            <input type="tel" name="phone" class="form-control" id="phone" placeholder="0861234567" pattern="[0-9]{10}" required>
+                                            <small>Format: 1234567890</small>
+
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="text">Additional information*</label>
+                                            <textarea name="form-text" rows="5" class="form-control" id="form-text" ></textarea>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="location-button">
+                                    Contact us
+                                </button>
+                            </form>
+                        </div>
+                    </div>
                 </section>
             </div>
         </div>
-
 
         <!--FOOTER-->
         <footer>
@@ -150,7 +165,6 @@
             </div>
             <p class="footer-text">Holybean coffee 2021</p>
         </footer>
-
 
         <!--JQuery-->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>

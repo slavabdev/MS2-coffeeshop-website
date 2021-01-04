@@ -718,8 +718,8 @@ button:focus {
     
 }
 
-
-.coffee-calc-heading {
+/*CALC*/
+/*.coffee-calc-heading {
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
     color: #763300;
@@ -736,44 +736,22 @@ button:focus {
     padding-top: 5px;
 }
 
-/*CALC*/
-
-.coffee-calc-form {
-    position: relative;
-    width: 100%;
-
-}
-
-.coffee-calc-form:after {
-    content: " ";
-    background: url("../img/coffee-bg.jpg") no-repeat;
-    background-position: right;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-    opacity: 0.3;
-}
 .form-cups label,
-.form-taste label,
-.coffee-calc .form-radio p {
+.form-taste label {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     color: #763300;
 }
 
-.coffee-calc .place-photo {
+
+
+
+
+
+.coffee-form .place-photo {
     height: 100%;
 }
 
-
-/*-----FORM SUBSCRIBE------*/
 
 .form-radio,
 .form-cups,
@@ -811,6 +789,45 @@ button:focus {
     font-family: "Lato", sans-serif;
     font-size: 14px;
     padding: 5px;
+} */
+
+/*-----FORM SUBSCRIBE------*/
+
+#subscribe-opt {
+    display: none;
+} 
+
+#subscribe-about button:focus,
+#subscribe-opt button:focus {
+    color:#f9f8f6;
+    background-color: #763300;
+}
+
+.sub-options {
+    border: solid 2px #aaa7a2;
+    padding: 10px;
+}
+
+.coffee-form {
+    position: relative;
+    width: 100%;
+}
+
+.coffee-form:after {
+    content: " ";
+    background: url("../img/coffee-bg.jpg") no-repeat fixed;
+    background-position: right;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.3;
 }
 
 #contact-form .form-group {
