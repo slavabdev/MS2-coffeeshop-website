@@ -6,7 +6,18 @@
         <title>HOLYBEAN COFFEE COMPANY</title>
         <!--Bootsrap4-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+       
+
         <link rel="stylesheet" href="assets/css/style.css">
+
+         <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"> </script>
+        <script type="text/javascript">
+        (function() {
+        emailjs.init("user_NsuxEM10gzRq2ybgKv8AY");
+        })();
+        </script>
     </head>
     <body>
         <!--NAVIGATION-->
@@ -55,9 +66,9 @@
                         <div class="col-lg-6 col-md-6 col-12">
 
                             <p class="slide-mod section-text">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, mollitia corrupti maiores temporibus sed ab, impedit ducimus, quis fugiat aperiam placeat libero voluptatum deleniti quod blanditiis optio ipsam architecto dolor!
+                                We are opening the delivery of freshly roasted coffee by subscription to anywhere in Ireland.<br> Each package contains 2 packs of our specialty selected coffee and instructions for brewing. Submit your application by the 15th and we will send your coffee by the 30th inclusive. And so every month.
                             </p>
-                            <button onclick="toggleFunction()" class="location-button ">Check options</button>
+                            <button id="sub-btn" class="location-button ">Choose your subscription</button>
 
                         </div>
                     </div>
@@ -74,7 +85,9 @@
                                 <h6 class="subheading-text">Bright option</h6>
                                 <p class="section-text">Only bright, juicy sorts of coffee with fruity acidity.
                                 </p>
-                                <button type="button" class="location-button">Bright</button>
+                                <button type="button" onclick="addtext('I would like to consider your Bright subscription option. Could you send me a price list?');" class="location-button">
+                                  <a href="#formText">Bright</a>  
+                                </button>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-12">
@@ -82,7 +95,9 @@
                                 <h6 class="subheading-text">Soft option</h6>
                                 <p class="section-text">The best of soft, balanced, sweet varieties of coffee.
                                 </p>
-                                <button type="button" class="location-button">Soft</button>
+                                <button type="button" onclick="addtext('I would like to consider your Soft subscription option. Could you send me a price list?');"  class="location-button">
+                                <a href="#formText">Soft</a>
+                                </button>
                             </div>
                         </div>
 
@@ -91,7 +106,9 @@
                                 <h6 class="subheading-text">Unique option</h6>
                                 <p class="section-text">Experimental and exclusive coffees with powerful and unusual flavors.
                                 </p>
-                                <button type="button" onclick="addtext('I would like to consider your unique option');" class="location-button">Unique</button>
+                                <button type="button" onclick="addtext('I would like to consider your Unique subscription option. Could you send me a price list?');" class="location-button">
+                                <a href="#formText">Unique</a>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -106,7 +123,7 @@
                             <h3 class="heading-text">
                                 Contact us to get your Holybean subscribtion
                             </h3>
-                            <form id="contact-form">
+                            <form id="contact_form" onsubmit="return sendMail(this);">
                                 <div class="row no-gutters">
                                     <div class="col-12">
                                         <div class="form-group">
@@ -129,7 +146,7 @@
 
                                         <div class="form-group">
                                             <label for="text">Additional information*</label>
-                                            <textarea name="form-text" rows="5" class="form-control" id="form-text" ></textarea>
+                                            <textarea name="formText" rows="5" class="form-control" id="formText" ></textarea>
 
                                         </div>
                                     </div>
@@ -172,6 +189,9 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <!--Font Awesome-->
         <script src="https://kit.fontawesome.com/585c251878.js" crossorigin="anonymous"></script>
+
+        <!-------Smooth scroll-------->
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 
         <script src="assets/js/script.js"></script>
         <script src="assets/js/subscribe.js"></script>
