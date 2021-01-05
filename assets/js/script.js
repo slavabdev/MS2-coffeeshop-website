@@ -17,14 +17,6 @@ function sendMail(promoForm) {
         return false;
 }
 
-//Clean form after submit
- let form = document.getElementById('promo_form')
-form.addEventListener('submit', function submitForm (event) {
-  event.preventDefault()
-
-  console.table([ ...new FormData(form).entries() ])
-  form.reset()
-})
 
 $(document).ready(function () {
     $('.header-burger').click(function (event) {
