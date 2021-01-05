@@ -1,5 +1,31 @@
 let scroll = new SmoothScroll('a[href*="#"]', {speed: 600});
 
+function sendMail(promoForm) {
+    emailjs.send("service_vd2bbtd","promo10", {
+        'from_name': promoForm.name.value,
+        'to_email': promoForm.emailaddress.value,
+        
+    })
+    .then(
+        function(response) {
+            console.log('SUCCESS', response)
+            alert('THANKS! YOU WILL GET YOUR PROMOCODE IN 5 MINUTES')
+        },
+        function(error) {
+            console.log('FAILED', error)
+        });
+        return false;
+}
+
+//Clean form after submit
+ let form = document.getElementById('promo_form')
+form.addEventListener('submit', function submitForm (event) {
+  event.preventDefault()
+
+  console.table([ ...new FormData(form).entries() ])
+  form.reset()
+})
+
 $(document).ready(function () {
     $('.header-burger').click(function (event) {
         $('.header-burger, .header-menu').toggleClass('active');

@@ -7,6 +7,14 @@
         <!--Bootsrap4-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/style.css">
+        <!--EmailJS--->
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"> </script>
+        <script type="text/javascript">
+        (function() {
+        emailjs.init("user_NsuxEM10gzRq2ybgKv8AY");
+        })();
+        </script>
     </head>
     <body>
         <!--NAVIGATION-->
@@ -148,7 +156,7 @@
                             <h6 class="subheading-text">
                                 Get your 10% promocode for your very first visit to our place
                             </h6>
-                            <form class="promo-form">
+                            <form id="promo_form" class="promo-form" onsubmit="return sendMail(this);">
                                 <div class="row no-gutters">
                                     <div class="col-lg-6 col-md-6 col-12">
                                         <div class="form-group">
