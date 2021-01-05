@@ -8,6 +8,9 @@
         <!--Bootsrap4-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
+        <!--Slide-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
         <link rel="stylesheet" href="assets/css/style.css">
       
     </head>
@@ -45,19 +48,19 @@
         <div class="container">
             <div class="section-wrapper">
                 <section id="subscribe-about">
-                    <h3 class="slide-mod heading-text">
+                    <h3 class="heading-text">
                         Coffee subscribtion
                     </h3>
 
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-12">
-                            <div class="place-photo">
+                            <div class="place-photo" data-aos="fade-right">
                                 <img src="assets/img/coffee-sub.jpg" alt="coffeeshop-photo">
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-12">
+                        <div class="col-lg-6 col-md-6 col-12" data-aos="fade-left">
 
-                            <p class="slide-mod section-text">
+                            <p class="section-text">
                                 We are opening the delivery of freshly roasted coffee by subscription to anywhere in Ireland.<br> Each package contains 2 packs of our specialty selected coffee and instructions for brewing. Submit your application by the 15th and we will send your coffee by the 30th inclusive. And so every month.
                             </p>
                             <button id="sub-btn" class="location-button " onclick="toggleFunction()">Choose your subscription</button>
@@ -72,7 +75,7 @@
             <section id="subscribe-opt">
                 <div class="container">
                     <h5 class="subheading-text">Subscription options</h5>
-                    <div class="row">
+                    <div class="row" data-aos="fade-up">
                         <div class="col-lg-4 col-md-4 col-12">
                             <div class="sub-options">
                                 <h6 class="subheading-text">Bright option</h6>
@@ -189,6 +192,9 @@
         <!--EmailJS--->
          <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
+        <!--SLIDE --->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
         <script src="assets/js/script.js"></script>
         <script src="assets/js/subscribe.js"></script>
