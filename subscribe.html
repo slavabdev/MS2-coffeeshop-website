@@ -4,20 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HOLYBEAN COFFEE COMPANY</title>
+        <link rel="shortcut icon" href="assets/img/bean.png" type="image/png">
         <!--Bootsrap4-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
-       
-
         <link rel="stylesheet" href="assets/css/style.css">
-
-         <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"> </script>
-        <script type="text/javascript">
-        (function() {
-        emailjs.init("user_NsuxEM10gzRq2ybgKv8AY");
-        })();
-        </script>
+      
     </head>
     <body>
         <!--NAVIGATION-->
@@ -68,7 +60,7 @@
                             <p class="slide-mod section-text">
                                 We are opening the delivery of freshly roasted coffee by subscription to anywhere in Ireland.<br> Each package contains 2 packs of our specialty selected coffee and instructions for brewing. Submit your application by the 15th and we will send your coffee by the 30th inclusive. And so every month.
                             </p>
-                            <button id="sub-btn" class="location-button ">Choose your subscription</button>
+                            <button id="sub-btn" class="location-button " onclick="toggleFunction()">Choose your subscription</button>
 
                         </div>
                     </div>
@@ -79,11 +71,12 @@
 
             <section id="subscribe-opt">
                 <div class="container">
+                    <h5 class="subheading-text">Subscription options</h5>
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-12">
                             <div class="sub-options">
                                 <h6 class="subheading-text">Bright option</h6>
-                                <p class="section-text">Only bright, juicy sorts of coffee with fruity acidity.
+                                <p class="section-text">Only bright, juicy sorts of coffee with fruity acidity and bright aftertaste.
                                 </p>
                                 <button type="button" onclick="addtext('I would like to consider your Bright subscription option. Could you send me a price list?');" class="location-button">
                                   <a href="#formText">Bright</a>  
@@ -93,7 +86,7 @@
                         <div class="col-lg-4 col-md-4 col-12">
                             <div class="sub-options">
                                 <h6 class="subheading-text">Soft option</h6>
-                                <p class="section-text">The best of soft, balanced, sweet varieties of coffee.
+                                <p class="section-text">The best of soft, balanced, sweet varieties of coffee around the globe.
                                 </p>
                                 <button type="button" onclick="addtext('I would like to consider your Soft subscription option. Could you send me a price list?');"  class="location-button">
                                 <a href="#formText">Soft</a>
@@ -151,7 +144,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button type="submit" class="location-button">
+                                <button type="submit" id="contact-btn" class="location-button">
                                     Contact us
                                 </button>
                             </form>
@@ -165,17 +158,17 @@
         <footer>
             <div class="social-media">
                 <div class="sm-icon">
-                    <a href="#" target="_blank">
+                    <a href="https://www.facebook.com/slav.balykov" target="_blank">
                         <i class="fa fa-facebook" aria-hidden="true"></i>
                     </a>
                 </div>
                 <div class="sm-icon">
-                    <a href="#" target="_blank">
+                    <a href="https://www.instagram.com/slavagram/" target="_blank">
                         <i class="fa fa-instagram" aria-hidden="true"></i>
                     </a>
                 </div>
                 <div class="sm-icon">
-                    <a href="#" target="_blank">
+                    <a href="https://co.pinterest.com/vbalykov/" target="_blank">
                         <i class="fab fa-pinterest-p" aria-hidden="true"></i>
                     </a>
                 </div>
@@ -188,10 +181,14 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <!--Font Awesome-->
-        <script src="https://kit.fontawesome.com/585c251878.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/585c251878.js"></script>
 
         <!-------Smooth scroll-------->
         <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+        <!--EmailJS--->
+         <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 
         <script src="assets/js/script.js"></script>
         <script src="assets/js/subscribe.js"></script>

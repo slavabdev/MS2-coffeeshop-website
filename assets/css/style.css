@@ -538,6 +538,7 @@ body {
     font: 20px 'Montserrat', sans-serif;
     text-align: center;
     text-transform: uppercase;
+    font-weight: 600;
 }
 
 .place-top-bg h3 {
@@ -545,7 +546,6 @@ body {
 }
 
 .place-text {
-    display: flex;
     font-size: 12px;
     padding: 5px 10px;
     margin-left: 10px;
@@ -554,7 +554,7 @@ body {
 }
 
 .place-text i {
-    font-size: 12px;
+    font-size: 14px;
     color: #763300;
 }
 
@@ -584,7 +584,8 @@ body {
 
 .menu-places:hover {
     text-decoration: none;
-    color: #d7b787;
+    color: #763300;
+    font-weight: 600;
 }
 
 .menu-places i {
@@ -592,6 +593,19 @@ body {
 }
 
 /*LOCATIONS BUTTONS*/
+
+.contact-details {
+    color: #212529;
+    font-weight: 600;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.contact-details:hover,
+.contact-details:focus {
+    color: #763300;
+    transition: all 0.2s ease-in;
+}
 
 .location-button {
     display: flex;
@@ -635,13 +649,14 @@ button:focus {
     margin: 0 auto 8px;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    font-weight: 600;
 }
 
 .popup-content {
     font-size: 14px;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    padding: 0 5px;
+    padding: 5px 5px;
     margin-bottom: 8px;
     line-height: 1.7;
     text-align: center;
@@ -656,6 +671,8 @@ button:focus {
     font-weight: 600;
     display: block;
     text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
 }
 
 .popup-link-promo {
@@ -666,7 +683,7 @@ button:focus {
 .popup-link-promo:hover,
 .popup-link:hover {
     text-decoration: none;
-    color: #d7b787
+    color: #763300
 }
 
 .popup-new-promo {
@@ -675,10 +692,17 @@ button:focus {
     font-family: "Lato", sans-serif;
 }
 
-@media(max-width:1024px) {
+@media(min-width:1024px) {
     #map {
         width: auto;
-        height: 300px;
+        height: 98%;
+    }
+}
+
+@media(max-width:1023px) {
+    #map {
+        width: auto;
+        height: 400px;
     }
 }
 
@@ -719,15 +743,16 @@ button:focus {
 
 #subscribe-about .heading-text {
     padding-top: 20px;
+    padding-bottom: 10px;
 }
 
-@media(max-width:767px) {
-    
+#subscribe-about .section-text {
+    margin-top: 0;
 }
 
 /*-----FORM SUBSCRIBE------*/
 
-#subscribe-opt {
+#sub-btn {
     display: none;
 } 
 
@@ -765,10 +790,34 @@ button:focus {
     opacity: 0.3;
 }
 
+@media(max-width:1024px){
+#subscribe-opt h5 {
+    font-size: 1.2;
+    font-weight: 400;
+}
+}
+
 @media(max-width:768px){
     .coffee-form:after{
         background-attachment: scroll;
     }
+    #subscribe-opt {
+    display: none;
+} 
+
+#subscribe-about .section-text {
+    padding-top: 13px;
+}
+
+#sub-btn {
+    display: block;
+    font-size: 12px;
+} 
+
+.sub-options {
+    margin: 10px 0;
+}
+
 }
 
 #contact_form .form-group {
@@ -806,7 +855,6 @@ input[type=email]:focus {
 #contact_form button:focus {
     color: #763300;
 }
-
 
 /*FOOTER*/
 
@@ -911,6 +959,7 @@ footer {
 @media(max-width:768px) {
     .section-text {
         margin: 14px 0;
+        font-size: 12px;
     }
 
     #promo .heading-text {

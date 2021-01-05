@@ -1,20 +1,27 @@
 let scroll = new SmoothScroll('a[href*="#"]', {speed: 600});
 
+(function() {
+        emailjs.init("user_NsuxEM10gzRq2ybgKv8AY");
+        })();
+
+        const promoForm = document.getElementById('promo_form');
+
 function sendMail(promoForm) {
-    emailjs.send("service_vd2bbtd","promo10", {
+    $('#promo-btn').prop('disabled', true)
+    emailjs.send("service_vd2bbtd", "promo10", {
         'from_name': promoForm.name.value,
-        'to_email': promoForm.emailaddress.value,
-        
-    })
-    .then(
-        function(response) {
-            console.log('SUCCESS', response)
-            alert('THANKS! YOU WILL GET YOUR PROMOCODE IN 5 MINUTES')
-        },
-        function(error) {
-            console.log('FAILED', error)
-        });
-        return false;
+        'to_email': promoForm.emailaddress.value
+
+    }).then(function (response) {
+        console.log('SUCCESS', response)
+        alert('THANKS! YOU WILL GET YOUR PROMOCODE IN 5 MINUTES')
+        $('#promo-btn').prop('disabled', false)
+        promoForm.reset()
+    }, function (error) {
+        console.log('FAILED', error)
+        $('#promo-btn').prop('disabled', false)
+    });
+    return false;
 }
 
 
@@ -23,14 +30,14 @@ $(document).ready(function () {
         $('.header-burger, .header-menu').toggleClass('active');
         $('body').toggleClass('lock')
     });
-  
-    (function ($) { /**
+
+     /**
    * Copyright 2012, Digital Fusion
    * Licensed under the MIT license.
    * http://teamdf.com/jquery-plugins/license/
    *
    * @author Sam Sehnert*/
-
+(function ($) {
         $.fn.visible = function (partial) {
 
             var $t = $(this),
@@ -49,9 +56,7 @@ $(document).ready(function () {
     })(jQuery);
 
     var win = $(window);
-
-   var allMods = $(".slide-mod");
-
+    var allMods = $(".slide-mod");
     allMods.each(function (i, el) {
         var el = $(el);
         if (el.visible(true)) {
@@ -60,7 +65,6 @@ $(document).ready(function () {
     });
 
     win.scroll(function (event) {
-
         allMods.each(function (i, el) {
             var el = $(el);
             if (el.visible(true)) {
@@ -68,6 +72,4 @@ $(document).ready(function () {
             }
         });
     });
-
-
-})
+});
