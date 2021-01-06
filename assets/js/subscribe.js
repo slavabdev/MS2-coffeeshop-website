@@ -1,4 +1,4 @@
-//Toggle subscription options section
+//Toggle subscription options section on mobile devices
 function toggleFunction() {
   let opt = document.getElementById("subscribe-opt");
   if (opt.style.display === "block") {
@@ -14,11 +14,12 @@ function addtext(content) {
     text.value = content;
 }
 
-//Contact form submit (EmailJS)
+//Initialize EmailJS
 (function() {
-        emailjs.init("user_NsuxEM10gzRq2ybgKv8AY");
-        })();
+    emailjs.init("user_NsuxEM10gzRq2ybgKv8AY");
+})();
 
+//Getting the information from form via EmailJS
 function sendMail(contactForm) {
     $('#contact-btn').prop('disabled', true)
     emailjs.send("service_vd2bbtd","subscription", {
@@ -27,6 +28,7 @@ function sendMail(contactForm) {
         'from_email': contactForm.emailaddress.value,
         'from_number': contactForm.phone.value
     })
+//Getting the information from form via EmailJS
     .then(
         function(response) {
             console.log('SUCCESS', response)

@@ -4,13 +4,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HOLYBEAN COFFEE COMPANY</title>
-        <link rel="shortcut icon" href="assets/img/bean.png" type="image/png">
-        <!--Bootsrap4-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-
-        <!--Slide-->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link
+        rel="shortcut icon" href="assets/img/bean.png" type="image/png">
         
+        <!--Bootsrap4-->
+        <link
+        rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+        <!--Slide effect-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
         <link rel="stylesheet" href="assets/css/style.css">
 
     </head>
@@ -44,7 +47,7 @@
             </div>
         </header>
 
-        <!--SLIDER-->
+        <!--Carousel-->
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -56,7 +59,7 @@
                     <img class="d-block w-100" src="assets/img/sliderbg--1.jpg" alt="First slide">
                     <div class="carousel-content">
                         <h3 class="carousel-heading">GET a discount in our new coffeeshop</h3>
-                        <button type="button" class="location-button" >
+                        <button type="button" class="location-button">
                             <a href="#promo" id="slider-button">
                                 Get a promocode
                             </a>
@@ -79,13 +82,11 @@
                     <img class="d-block w-100" src="assets/img/sliderbg--3-1.jpg" alt="Third slide">
                     <div class="carousel-content">
                         <h3 class="carousel-heading">Find our the nearest coffeeshop to you</h3>
-
                         <button type="button" class="location-button">
                             <a href="locations.html">
                                 Go to locations
                             </a>
                         </button>
-
                     </div>
                 </div>
             </div>
@@ -100,7 +101,6 @@
         </div>
 
         <!--ABOUT SECTION-->
-
         <section id="about">
             <div class="section-wrapper">
                 <div class="container">
@@ -109,18 +109,18 @@
                     </h3>
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-12" data-aos="fade-right">
-                            <div class="place-photo"  >
+                            <div class="place-photo">
                                 <img src="assets/img/about-img.jpg" alt="coffeeshop-photo">
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-12" data-aos="fade-left">
-
-                            <p class="section-text" >
-                                Who we are Holybean Coffee Company? <br><br>
-                                First of all, it is a truly delicious branded coffee from Cork with a friendly atmosphere and smiling baristas. <br>
-
-                                Along with a smooth, delicious drink and outstanding sandwich you will get a great mood for the whole day for absolutely free. <br><br>
-
+                            <p class="section-text">
+                                Who we are Holybean Coffee Company?
+                                <br><br>
+                                First of all, it is a truly delicious branded coffee from Cork with a friendly atmosphere and smiling baristas.
+                                <br>
+                                Along with a smooth, delicious drink and outstanding sandwich you will get a great mood for the whole day for absolutely free.
+                                <br><br>
                                 We are very welcome you!
                             </p>
                         </div>
@@ -129,69 +129,66 @@
             </div>
         </section>
 
-        <!--PROMO SECTION-->
+        <!--PROMO-->
         <section id="promo">
-
             <div class="section-wrapper">
                 <div class="container">
                     <h3 class="heading-text">
                         Visit our brand new place!
                     </h3>
                     <div class="row">
-
                         <div class="col-lg-6 col-md-6 col-12" data-aos="fade-right">
-                            <div class="promo-text-block" >
-                            <p class="section-text">
-                               We would like to introduce to you our brand new coffee shop. It located in the vibrant district of Little Island at the Eastgate Retail Park. <br> So grab your promocode head to us and try our outstanding coffee!
-                            </p>
-                            <div class="break-line">
-                                <hr class="break">
-                                <img src="assets/img/bean.png" alt="logo">
-                                <hr class="break">
-                            </div>
-                            <h6 class="subheading-text">
-                                Get your 10% promocode for your very first visit to our place
-                            </h6>
-                            <form id="promo_form" class="promo-form" onsubmit="return sendMail(this);">
-                                <div class="row no-gutters">
-                                    <div class="col-lg-6 col-md-6 col-12">
-                                        <div class="form-group">
-                                            <label for="form-name">Name*</label>
-                                            <input type="text" name="name" class="form-control" id="form-name" placeholder="Coffeelover" required>
+                            <div class="promo-text-block">
+                                <p class="section-text">
+                                    We would like to introduce to you our brand new coffee shop. It located in the vibrant district of Little Island at the Eastgate Retail Park.
+                                    <br>
+                                    So grab your promocode head to us and try our outstanding coffee!
+                                </p>
+                                <div class="break-line">
+                                    <hr class="break">
+                                    <img src="assets/img/bean.png" alt="logo">
+                                    <hr class="break">
+                                </div>
+                                <!--PROMO FORM-->
+                                <h6 class="subheading-text">
+                                    Get your 10% promocode for your very first visit to our place
+                                </h6>
+                                <form id="promo_form" class="promo-form" onsubmit="return sendMail(this);">
+                                    <div class="row no-gutters">
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <div class="form-group">
+                                                <label for="form-name">Name*</label>
+                                                <input type="text" name="name" class="form-control" id="form-name" placeholder="Coffeelover" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <div class="form-group">
+                                                <label for="form-email">Email address*</label>
+                                                <input type="email" name="emailaddress" class="form-control" id="form-email" placeholder="name@example.com" required>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-12">
-                                        <div class="form-group">
-                                            <label for="form-email">Email address*</label>
-                                            <input type="email" name="emailaddress" class="form-control" id="form-email" placeholder="name@example.com" required>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <button type="submit" id="promo-btn" class="location-button">
+                                                Get a promocode
+                                            </button>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12">
-
-                                        <button type="submit" id="promo-btn" class="location-button">
-                                            Get a promocode
-                                        </button>
-
-                                    </div>
-                                </div>
-                            </form>
+                                </form>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 d-md-block d-none" data-aos="fade-left">
-                            <div class="place-photo" >
+                            <div class="place-photo">
                                 <img class="place-photo" src="assets/img/promo.jpg" alt="coffeeshop-photo">
                             </div>
                         </div>
-                        
                     </div>
                 </div>
             </div>
         </section>
 
-        <!--LOCATIONS SECTION-->
-
+        <!--LOCATIONS-->
         <section id="places">
             <div class="section-wrapper">
                 <div class="container">
@@ -200,22 +197,24 @@
                     </h3>
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-12" data-aos="fade-right">
-                            <div class="place-photo" >
+                            <div class="place-photo">
                                 <img class="place-photo" src="assets/img/locations-img.jpg" alt="coffeeshop-photo">
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-12" data-aos="fade-left">
-                            <div class="loc-text-block" >
-                            <p class="section-text">
-                                Holybean is a 3 coffeeshops in county Cork, Ireland. Our awesome places located in the centre of Cork, Blackrock and Little Island. 
-                                To get the details of our places just click the button below. <br> <br>
-                                We will be happy to have you!
-                            </p>
-                            <button type="button" class="location-button">
-                                <a href="locations.html">
-                                    Go to locations
-                                </a>
-                            </button>
+                            <div class="loc-text-block">
+                                <p class="section-text">
+                                    Holybean is a 3 coffeeshops in county Cork, Ireland. Our awesome places located in the centre of Cork, Blackrock and Little Island. 
+                                    To get the details of our places just click the button below.
+                                    <br>
+                                    <br>
+                                    We will be happy to have you!
+                                </p>
+                                <button type="button" class="location-button">
+                                    <a href="locations.html">
+                                        Go to locations
+                                    </a>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -224,25 +223,23 @@
         </section>
 
         <!--SUBSCRIBTION-->
-
         <section id="main-subscription">
             <div class="subs-section-block">
                 <div class="section-wrapper">
                     <div class="container-fluid">
                         <h3 class="heading-text">Staying home?</h3>
                         <div class="sub-text-block" data-aos="fade-up">
-                        <p class="section-text">
-                            Check our outstanding coffee subscription option!
-                        </p>
-                        <p class="section-text">
-                            Click the button below and we will help you to choose the best coffee for you!
-                        </p>
-
-                        <button type="button" class="location-button">
-                            <a href="subscribe.html">
-                                Choose your coffee
-                            </a>
-                        </button>
+                            <p class="section-text">
+                                Check our outstanding coffee subscription option!
+                            </p>
+                            <p class="section-text">
+                                Click the button below and we will help you to choose the best coffee for you!
+                            </p>
+                            <button type="button" class="location-button">
+                                <a href="subscribe.html">
+                                    Choose your coffee
+                                </a>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -275,17 +272,17 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-        
+
         <!--Font Awesome-->
         <script src="https://kit.fontawesome.com/585c251878.js"></script>
 
-        <!-------Smooth scroll-------->
+        <!--Smooth scroll-->
         <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 
         <!--EmailJS--->
-        <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"> </script>
-        <!--SLIDE --->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        
+        <!--Slide effect --->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
         <script src="assets/js/script.js"></script>

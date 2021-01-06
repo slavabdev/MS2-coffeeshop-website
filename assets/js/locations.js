@@ -1,5 +1,7 @@
+//Slide effect from Animate on scroll library (AOS) https://michalsnik.github.io/aos/
 AOS.init();
 
+//Responsive hamburger menu
 $(document).ready(function () {
     $('.header-burger').click(function (event) {
         $('.header-burger, .header-menu').toggleClass('active');
@@ -7,6 +9,7 @@ $(document).ready(function () {
     });
 });
 
+//Initialize google map 
 let map;
 
 function initMap() { 
@@ -25,6 +28,7 @@ map = new google.maps.Map(document.getElementById("map"), {
     zoom:12,
   });
 
+//Zoom a location by clicking on external button
 $(".location-button").click(function() {
   console.log(this.dataset.lat+","+this.dataset.lng);
   map.setCenter(new google.maps.LatLng(this.dataset.lat, this.dataset.lng));
@@ -33,6 +37,7 @@ $(".location-button").click(function() {
 
   let infowindow = new google.maps.InfoWindow({});
 
+//Add markers on map according the information in locations array
   let marker, count;
   let bounds = new google.maps.LatLngBounds();
   for (count = 0; count<locations.length; count++) {
@@ -43,7 +48,8 @@ $(".location-button").click(function() {
   });
 
 bounds.extend(marker.getPosition());
-  
+
+//Pop up an infowindow after clicking on marker
 google.maps.event.addListener(marker, 'click', (function (marker, count) {
       return function () {
         infowindow.setContent(locations[count][0]);

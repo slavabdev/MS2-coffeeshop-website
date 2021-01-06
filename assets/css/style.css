@@ -1,5 +1,7 @@
+/*-------Import google fonts------*/
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@300;400;500;600&display=swap');
 
+/*-------Rewrite browser basic settings-----*/
 * {
     margin: 0;
     padding: 0;
@@ -71,7 +73,6 @@ body {
     color: #d7b787;
 }
 
-
 .header-body {
     position: relative;
     display: flex;
@@ -90,7 +91,6 @@ body {
     z-index: 2;
     margin-bottom: 0;
 }
-
 
 .menu-list li {
     list-style: none;
@@ -112,10 +112,10 @@ body {
     color: #d7b787;
 }
 
+/*-------NAVBAR MEDIA QUERIES------*/
 
+/*-------for mobile devices------*/
 @media(max-width:768px) {
-
-
     .header-body {
         height: 50px;
     }
@@ -191,14 +191,13 @@ body {
 
 }
 
-.content {
+/*.content {
     padding-top: 60px;
-}
+}*/
 
 .section-wrapper {
     margin: 40px 20px;
 }
-
 
 /*-----------------CAROUSEL---------------*/
 
@@ -214,7 +213,6 @@ body {
     right: 30%;
     z-index: 20;
     padding: 5px;
-
 }
 
 .carousel-heading {
@@ -253,23 +251,26 @@ body {
     color: #763300;
 }
 
+/*-------for mobile devices with
+ screen-width less than 600px ---------*/
+
 @media (max-width:600px) {
-#main-subscription button,
-#places button,
-.carousel-item button {
-    padding: 4px 10px;
-    margin-top: 5px;
-}
-#main-subscription button a,
-#places button a,
-.carousel-item button a {
-    font-size: 10px;
+    #main-subscription button,
+    #places button,
+    .carousel-item button {
+        padding: 4px 10px;
+        margin-top: 5px;
+    }
+    #main-subscription button a,
+    #places button a,
+    .carousel-item button a {
+        font-size: 10px;
+    }
 }
 
-}
+/*-------CAROUSEL MEDIA QUERIES---------*/
 
-/*-------carousel media queries---------*/
-
+/*-------for laptop and large tablets---------*/
 @media(max-width:1024px) {
     .carousel-content {
         position: absolute;
@@ -286,9 +287,9 @@ body {
     .location-button {
         font-size: 16px;
     }
-
 }
-
+/*-------for mobile devices with
+ screen-width less than 600px ---------*/
 @media(max-width:600px) {
     .carousel-item {
         margin-top: 50px;
@@ -330,16 +331,17 @@ body {
     width: 100%;
 }
 
+/*-------ABOUT MEDIA QUERIES---------*/
+
+/*-------for mobile devices with
+ screen-width less than 600px ---------*/
 @media(max-width:600px){
     #about .section-text {
         margin-bottom: 5px;
     }
 }
 
-/*PROMO SECTION*/
-
-
-
+/*-------PROMO---------*/
 
 .section-text {
     font-family: "Lato", sans-serif;
@@ -353,7 +355,6 @@ body {
     font-weight: 600;
     color: #763300;
     margin-bottom: 16px;
-
 }
 
 #promo .place-photo {
@@ -388,12 +389,12 @@ body {
 .break-line {
     text-align: center;
     margin-bottom: 1rem;
+
 }
 .break {
     display: inline-block;
     width: 20%;
     margin-bottom: 8px;
-
 }
 
 .break-line img {
@@ -407,32 +408,37 @@ body {
 .form-group {
     width: 90%;
 }
+/*-------PROMO MEDIA QUERIES---------*/
 
-
+/*-------for laptop and large tablets---------*/
 @media(max-width:1024px) {
-#promo .place-photo {
-    height: 90%;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    top: 5%;
-    right: 0%;
-    left: 0%;
-}
+    #promo .place-photo {
+        height: 100%;
+        width: auto;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        right: 5%;
+        left: 5%;
+    }
 }
 
+/*-------for tablets---------*/
 @media(max-width:768px) {
-#promo .place-photo {
-    height: 90%;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    top: 5%;
-    right: 2%;
-}
+    #promo .place-photo {
+        height: 90%;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        top: 5%;
+        right: 2%;
+    }
 }
 
-/*form media queries*/
+/*-------FORM MEDIA QUERIES---------*/
+
+/*-------for mobile devices with
+ screen-width less than 600px ---------*/
 @media(max-width:600px) {
     .form-group label {
         font-size: 12px;
@@ -451,10 +457,14 @@ body {
         padding: 5px;
         font-size: 12px;
     }
-
 }
 
-/*-----------------SUBSCRIPTION main--------------*/
+/*-------PLACES---------*/
+#places .section-wrapper {
+    margin-top: 50px;
+}
+
+/*-------SUBSCRIPTION---------*/
 
 .subs-section-block {
     position: relative;
@@ -488,22 +498,23 @@ body {
     margin-top: 10px;
 }
 
+/*-------SUBSCRIPTION MEDIA QUERIES---------*/
+
+/*-------for tablets ---------*/
 @media(max-width:768px){
     .subs-section-block:after{
         background-attachment: scroll;
     }
 }
 
-/*-----------------LOCATIONS PAGE-----------------------------*/
+/*---------------------------------LOCATIONS PAGE-----------------------------*/
 .heading {
     max-width: 100%;
     height: auto;
     text-align: center;
-
 }
 
 .heading-text {
-
     padding-top: 20px;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
@@ -568,7 +579,6 @@ body {
     margin-right: 10px;
 }
 
-
 .menu-places {
     text-decoration: none;
     text-transform: uppercase;
@@ -579,7 +589,6 @@ body {
     font-size: 12px;
     font-weight: 400;
     margin-left: 10px;
-
 }
 
 .menu-places:hover {
@@ -591,8 +600,7 @@ body {
 .menu-places i {
     color: #763300;
 }
-
-/*LOCATIONS BUTTONS*/
+/*-------LOCATIONS BUTTONS---------*/
 
 .contact-details {
     color: #212529;
@@ -616,7 +624,6 @@ body {
     border: solid 1px #763300;
     font-weight: 400;
     margin: 10px auto;
-
     background-color: white;
     cursor: pointer;
     text-transform: uppercase;
@@ -627,21 +634,18 @@ body {
     background-color: #763300;
 }
 
-
 button:focus {
     outline: none;
     color: white;
 }
 
-/*MAP STYLING*/
+/*-------MAP---------*/
 
 #map {
     width: auto;
     height: 98%;
     margin-top: 1rem;
 }
-
-/*MAP POP-UP STYLING*/
 
 .popup-header {
     color: #763300;
@@ -691,21 +695,23 @@ button:focus {
     color: red;
     font-family: "Lato", sans-serif;
 }
+/*-------MAP MEDIA QUERIES---------*/
 
+/*-------for laptop and large screens---------*/
 @media(min-width:1024px) {
     #map {
         width: auto;
         height: 98%;
     }
 }
-
+/*-------for laptop and large tablets---------*/
 @media(max-width:1023px) {
     #map {
         width: auto;
         height: 400px;
     }
 }
-
+/*-------for mobile devices and tablets---------*/
 @media(max-width:768px) {
     #map {
         width: auto;
@@ -713,14 +719,12 @@ button:focus {
     }
 }
 
-
 .content-text {
     line-height: 1.5;
     font-size: 20px;
 }
 
-/* MEDIA QUERIES FOR LOCATIONS*/
-
+/*-------for mobile devices---------*/
 @media(max-width:600px) {
     .wrapper-loc {
         padding-left: 10px;
@@ -731,8 +735,9 @@ button:focus {
 }
 
 
-/*******************************SUBSCRIBTION PAGE****************************/
+/*-----------------------------SUBSCRIPTION PAGE-----------------------------*/
 
+/*-------ABOUT---------*/
 .sub-options .section-text {
     text-align: center;
 }
@@ -755,7 +760,6 @@ button:focus {
 #sub-btn {
     display: none;
 } 
-
 
 #subscribe-about button:focus,
 #subscribe-opt button:focus {
@@ -789,36 +793,41 @@ button:focus {
     z-index: -1;
     opacity: 0.3;
 }
+/*-------SUBSCRIBE OPTIONS MEDIA QUERIES---------*/
 
+/*-------for large tablets and laptops---------*/
 @media(max-width:1024px){
-#subscribe-opt h5 {
-    font-size: 1.2;
-    font-weight: 400;
+    #subscribe-opt h5 {
+        font-size: 1.2;
+        font-weight: 400;
+    }
 }
-}
-
+/*-------for tablets---------*/
 @media(max-width:768px){
-    .coffee-form:after{
+    .coffee-form:after {
         background-attachment: scroll;
     }
+
     #subscribe-opt {
-    display: none;
-} 
+        display: none;
+    } 
 
-#subscribe-about .section-text {
-    padding-top: 13px;
+    #subscribe-about .section-text {
+        padding-top: 13px;
+    }
+
+    #sub-btn {
+        display: block;
+        font-size: 12px;
+    } 
+
+    .sub-options {
+        margin: 10px 0;
+    }
+
 }
 
-#sub-btn {
-    display: block;
-    font-size: 12px;
-} 
-
-.sub-options {
-    margin: 10px 0;
-}
-
-}
+/*-------CONTACT FORM---------*/
 
 #contact_form .form-group {
     width: 100%;
@@ -829,6 +838,7 @@ button:focus {
     margin-bottom: 2rem;
     padding: 0;
 }
+
 input[type=text]:focus,
 input[type=tel]:focus,
 input[type=email]:focus {
@@ -842,7 +852,6 @@ input[type=email]:focus {
     box-shadow: none;
     border: 3px solid #aaa7a2;
     color: #212529;
-
 }
 
 #coffeeSubForm button:focus {
@@ -856,21 +865,19 @@ input[type=email]:focus {
     color: #763300;
 }
 
-/*FOOTER*/
+/*-------FOOTER---------*/
 
 footer {
     width: 100%;
     height: 6.2rem;
     background-color: #5e5553;
     margin-top: 1.5rem;
-
 }
 
 .social-media {
     display: flex;
     justify-content: center;
     color: #f9f8f6;
-
 }
 
 .sm-icon {
@@ -879,8 +886,6 @@ footer {
     margin-right: 3rem;
     text-decoration: none;
     color: #f9f8f6;
-
-
 }
 
 .sm-icon a {
@@ -891,9 +896,7 @@ footer {
     width: 3rem;
     height: 3rem;
     text-align: center;
-
     display: inline-block;
-
 }
 
 .sm-icon a:hover,
@@ -913,6 +916,9 @@ footer {
     padding-bottom: 0.2rem;
 }
 
+/*-------FOOTER MEDIA QUERIES---------*/
+
+/*-------for tablets---------*/
 @media(max-width:768px) {
     .sm-icon {
         margin-right: 1rem;
@@ -923,11 +929,10 @@ footer {
         font-size: 12px;
     }
 }
-
+/*-------for small mobile devices---------*/
 @media(max-width:600px) {
     .sm-icon {
-        margin-right: 1rem;
-        
+        margin-right: 1rem;  
     }
 
     .sm-icon a {
@@ -942,7 +947,9 @@ footer {
     }
 }
 
-/*-----Basic media queries------*/
+/*-----BASIC MEDIA QUERIES------*/
+
+/*-------for large tablets and laptops---------*/
 @media(max-width:1024px) {
     .section-text {
         font-size: 14px;
@@ -954,8 +961,9 @@ footer {
     .section-wrapper {
         margin: 40px 20px;
     }
-}
 
+}
+/*-------for tablets---------*/
 @media(max-width:768px) {
     .section-text {
         margin: 14px 0;
@@ -970,7 +978,7 @@ footer {
         margin: 30px 30px;
     }
 }
-
+/*-------for small mobile devices---------*/
 @media(max-width:600px) {
     .section-text {
         font-size: 12px;
