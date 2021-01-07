@@ -33,9 +33,9 @@ This is a website of **Holybean Coffee Company**  – coffee company network wit
 - As a **new visitor** of a coffee shop site, I want to see short content blocks with nice and relevant pictures;
 - As a **new visitor**, I want to see a modern website with a pleasant coloгr palette.
 
-- As an **interested visitor** of a coffee shop site, I want to easily find clear information about its locations, services and special offers.
-- As an **interested visitor** in "coffee subscription" service, I want to get clear information how it works and how can I apply.
-- As an **interested visitor**, I wantg to easily find out how to contact with coffee shops, take a look to the the menu, book a table or order a delivery.
+- As an **interested visitor** of a coffee shop site, I want to easily find clear information about its locations, services and special offers;
+- As an **interested visitor** in "coffee subscription" service, I want to get clear information how it works and how can I apply;
+- As an **interested visitor**, I wantg to easily find out how to contact with coffee shops, take a look to the the menu, book a table or order a delivery;
 - As an **interested visitor**, I want to see a good connection between sections and pages across the website. 
 
 ### Design
@@ -63,63 +63,60 @@ The website features are:
 - **Home page**
 - Besides navigation bar and footer **Home page** consists of **5 sections**: 
 1. Carousel. There are three slides in carousel. Every slide includes heading and button for convenient navigation between sections and pages. 
-- For a smooth transition between sections on the same page smooth scroll feature is applied.
+    - For a smooth transition between sections on the same page smooth scroll feature is applied.
 2. About.
-- The about section is made to be concisely and responsive.  There are a thematic photo and a short text.
+    - The about section is made to be concisely and responsive.  There are a thematic photo and a short text.
 3. Promo.
-A promo section includes a thematic picture (picture does not display on mobile devices deliberately, so as not to overload the page) and the content part with short text description and form.
-- If the user leaves his details (name and email) and push the Submit button, he will get an email with promocode. To be sure that form submitted successfully, the user will see a corresponding alert at the page.
+    - A promo section includes a thematic picture (picture does not display on mobile devices deliberately, so as not to overload the page) and the content part with short text description and form.
+    - If the user leaves his details (name and email) and push the Submit button, he will get an email with promocode. To be sure that form submitted successfully, the user will see a corresponding alert at the page.
 4. Locations
-The Location section is made to be concisely and responsive.  There are a thematic photo and a short text with a button that leads to the Locations page.
+    - The Location section is made to be concisely and responsive.  There are a thematic photo and a short text with a button that leads to the Locations page.
 5. Subscription section
-The Subscription section is made to be concisely and responsive. There are a short text with a button that leads to Subscription page.
-On desktop devices subscription section background image has a fixed position, which allows creating a parallax effect. For mobile devices hero-image is seen static, to avoid mobile cross-browser displaying problems. 
+    - The Subscription section is made to be concisely and responsive. There are a short text with a button that leads to Subscription page.
+    - On desktop devices subscription section background image has a fixed position, which allows creating a parallax effect. For mobile devices hero-image is seen static, to avoid mobile cross-browser displaying problems. 
   
 - **Locations page**
 - Locations page can be devided by 2 sections:
-1. According to the legend, Holybean has 3 coffee shops. On the Locations page, every coffee shop has a  block with information with Name, address and contacts. There is also a "Show on map" button at the bottom of each block.
+1. According to the legend, Holybean has 3 coffee shops. 
+    - On the Locations page, every coffee shop has a  block with information with Name, address and contacts. There is also a "Show on map" button at the bottom of each block.
 2. Google map.
-- Maps have been added to the site for easy access to coffee shops locations.
-- Every place has its own marker on the map.
-- By clicking a "Show on map" button, map brings to a particular marker.
-- By clicking on the marker, Inform window with a short text appears.
-- User can get directions by clicking a corresponding link inside the inform window.  
+    - Maps have been added to the site for easy access to coffee shops locations.
+    - Every place has its own marker on the map.
+    - By clicking a "Show on map" button, map brings to a particular marker.
+    - By clicking on the marker, Inform window with a short text appears.
+    - User can get directions by clicking a corresponding link inside the inform window.  
 
 - **Subscribe page**
 - Subscribe page includes 3 sections:
 1. The Subscribe details section is made to be concisely and responsive. There are a thematic photo and a short text. 
-- There is also a "Choose your subscription" button. But to avoid the site overload with content "Choose your subscription" toggle button is displayed only on mobile devices. (It toggle down Subscribe options section) 
+    - There is also a "Choose your subscription" button. But to avoid the site overload with content "Choose your subscription" toggle button is displayed only on mobile devices. (It toggle down Subscribe options section) 
 2. Subscribe options section laid out in 3 small blocks which displayed permanently on large screens. Each block includes a short description of options and button on the bottom.
-- Depending on which button user presses, the text with his choice will be placed in the text area of ​​the form (he can also add to the placed content any text he wants). This feature is supposed to make it easier for the user to fill out the form.
+    - Depending on which button user presses, the text with his choice will be placed in the text area of ​​the form (he can also add to the placed content any text he wants). This feature is supposed to make it easier for the user to fill out the form.
 3. Subscription form will allow the user who interested in a coffee subscription to leave his details for further communications.
-- Filled form with user details goes to Holybean email via EmailJS.
-
+    - Filled form with user details goes to Holybean email via EmailJS.
 
 
 ### Things to implement in future
-- Add a blog section to the website.
-- Update the "*contact form*".
-- Create separate pages for the core projects from portfolio.
+- Add an online store page (With abilities to buy coffee and order delivery).
 
 ## Technologies used
 - **Languages Used:**
   - [HTML5](https://en.wikipedia.org/wiki/HTML5)
   - [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+  - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 - **Frameworks, Libraries & Programs Used:**
-1.	[Bootstrap 4.5.2](https://getbootstrap.com/docs/4.4/getting-started/introduction/):
+1.	[Bootstrap 4.0.0](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
      - Bootstrap was used to assist with the responsiveness and styling of the website.
-2.	[Hover.css](https://ianlunn.github.io/Hover/):
-    - Hover.css was used following areas:
-        - on the buttons on the whole website (add underline transition while being hovered over). 
-        - on the icons in the skills section (add grow transition while being hovered over).
-3.  [Google Fonts](https://fonts.google.com/):
+2.  [Google Fonts](https://fonts.google.com/):
     - Google fonts were used to import the “Open Sans” and “Montserrat” fonts into the style.css file which are used on the website.
-4.	[Font Awesome](https://fontawesome.com/): 
-     - Font Awesome was used to add icons to the skills and footer section on the website.
-5.	[Flat Icon](https://www.flaticon.com/):
-    - Flat icon was used as a source for browser icon.
+3.	[Font Awesome](https://fontawesome.com/): 
+     - Font Awesome was used to add icons to locations page and footer of the website.
 6.	[jQuery](https://jquery.com/):
-    - jQuery came with Bootstrap to make the navigation bar responsive.
+    - jQuery used to make the navigation bar responsive and to add event listeners.
+    [EmailJS](https://www.emailjs.com/):
+    - Used to Get and Send emails from/to the users.
+9.	[AOS](https://michalsnik.github.io/aos/):
+    - Animate on scroll library (AOS) used to create a slide effect while scrolling the website pages.   
 7.	[Git](https://git-scm.com/):
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 8.	[GitHub](https://github.com/):
@@ -169,13 +166,13 @@ The W3C Markup Validator and W3C CSS Validator Services were used in the project
 - All buttons and links have been tested several times to make sure they work correctly.
 - Friends and family members reviewed the website from their devices to make sure that website is displaying well and all functions are working properly. 
 ### Known Bugs
-- At the current moment, submit function doesn’t work as it should. When clicking on “Contact me” button in the Contact form, a local post client will be launched.  
+- At the current moment, if the user clicks on different subscription options buttons for many times, it causes to a page "freezing". To eliminate this user has to put a cursor and click at any place of the form lines or refresh the page. 
 ## Deployment
 This project was developed using the GitPod, committed to Git and pushed to GitHub.
 ### GitHub Pages
 To deploy the project to GitHub Pages the following steps were taken:
 1.	Log in to GitHub and go to the [slavabdev](https://github.com/slavabdev?tab=repositories) GitHub Repository.
-2.	From the list if existing repositories select the **slavabdev/portfolio-ms1**.
+2.	From the list if existing repositories select the **slavabdev/MS2-coffeeshop-website**.
 3.	At the top-right side of the Repository section, click on "Settings" Button.
 4.	Scroll down to the "GitHub Pages" section.
 5.	Under "Source", click the dropdown menu and change it from "None" to «Master Branch".
@@ -194,11 +191,11 @@ A forking the GitHub Repository is used for copying of the original depository t
 5.	Change the current working directory to the location where you want the cloned directory to be made.
 6.	Type git clone, and then paste the URL you copied before.
 ```console
-git clone https://github.com/USERNAME/REPOSITORY
+git clone https://github.com/SLAVABDEV/REPOSITORY
 ```
 7.	Press Enter. Your local clone will be created.
 ```console
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+$ git clone https://github.com/SLAVABDEV/MS2-coffeeshop-website
 > Cloning into `Spoon-Knife`...
 > remote: Counting objects: 10, done.
 > remote: Compressing objects: 100% (8/8), done.

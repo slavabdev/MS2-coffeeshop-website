@@ -20,7 +20,7 @@ let locations = [
 <a class="popup-link" href="https://goo.gl/maps/61eDWDqqRhK91W3y5" target="_blank"> Get directions</a>`, 51.898669, -8.403624 ],
 [`<h6 class="popup-header">Holybean (Cork)</h6> <p class="popup-content">Visit our first Cork coffeeshop ever. </br> Try our classic filter coffee, because classic never gets old!</p>
 <a class="popup-link" href="https://goo.gl/maps/uSmUje2NXm1irkdC8" target="_blank"> Get directions</a>`, 51.895301, -8.471848 ],
-[`<h6 class="popup-header">Holybean (Little Island)</h6> <p class="popup-content">Welcome to our <span class="popup-new-promo">New</span> Little Island coffeeshop!</br>You know what, we have discounts for you!</br> Click <a class="popup-link-promo" href="index.html#promo" target="_blank"> HERE </a> to get your discount.</p>
+[`<h6 class="popup-header">Holybean (Little Island)</h6> <p class="popup-content">Welcome to our <span class="popup-new-promo">New</span> Little Island coffeeshop!</br>You know what, we have discounts for you!</br> Click <a class="popup-link-promo" href="index.html#promo" target="_blank"> HERE </a> to get yours.</p>
 <a class="popup-link" href="https://goo.gl/maps/MWuHpxCrvS878Ysn9" target="_blank"> Get directions</a>`, 51.904308, -8.357043]
 ];
 map = new google.maps.Map(document.getElementById("map"), {
@@ -30,7 +30,6 @@ map = new google.maps.Map(document.getElementById("map"), {
 
 //Zoom a location by clicking on external button
 $(".location-button").click(function() {
-  console.log(this.dataset.lat+","+this.dataset.lng);
   map.setCenter(new google.maps.LatLng(this.dataset.lat, this.dataset.lng));
   map.setZoom(15);
   });  

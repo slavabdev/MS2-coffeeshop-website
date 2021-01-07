@@ -209,6 +209,10 @@ body {
     right: 30%;
     z-index: 20;
     padding: 5px;
+    text-align: center;
+}
+.btn-link .location-button {
+    display: inline-block;
 }
 
 .carousel-heading {
@@ -218,50 +222,6 @@ body {
     text-align: center;
     font-weight: 600;
     margin-bottom: 2rem;
-}
-
-/*-------Buttons with link---------*/
-.sub-options button,
-#main-subscription button,
-#places button,
-.carousel-item button {
-    background-color: #763300;
-}
-.sub-options button a,
-#main-subscription button a,
-#places button a,
-.carousel-item button a {
-    text-decoration: none;
-    color: #f9f8f6;
-}
-.sub-options button:hover,
-#main-subscription button:hover,
-#places button:hover,
-.carousel-item button:hover {
-    background: #f9f8f6;
-}
-.sub-options button:hover>a,
-#main-subscription button:hover >a,
-#places button:hover > a,
-.carousel-item button:hover > a {
-    color: #763300;
-}
-
-/*-------for mobile devices with
- screen-width less than 600px ---------*/
-
-@media (max-width:600px) {
-    #main-subscription button,
-    #places button,
-    .carousel-item button {
-        padding: 4px 10px;
-        margin-top: 5px;
-    }
-    #main-subscription button a,
-    #places button a,
-    .carousel-item button a {
-        font-size: 10px;
-    }
 }
 
 /*-------CAROUSEL MEDIA QUERIES---------*/
@@ -284,8 +244,19 @@ body {
         font-size: 16px;
     }
 }
-/*-------for mobile devices with
- screen-width less than 600px ---------*/
+
+/*-------for tablets---------*/
+@media (max-width:768px) {
+    .btn-link .location-button {
+        font-size: 13px;
+    }
+
+    .carousel-heading {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/*-------for small mobile devices---------*/
 @media(max-width:600px) {
     .carousel-item {
         margin-top: 50px;
@@ -303,12 +274,11 @@ body {
     .carousel-heading {
         font-size: 12px;
         font-weight: 600;
-        margin-bottom: 4px;
+        margin-bottom: 0.7rem;
     }
-    .carousel-content .location-button {
-        font-size: 10px;
+    .btn-link .location-button {
+        font-size: 12px;
     }
-
 }
 
 /*-------ABOUT---------*/
@@ -365,14 +335,14 @@ body {
 }
 
 #promo .location-button {
-    background-color: #763300;
-    color: #f9f8f6;
+    background-color:#f9f8f6 ;
+    color: #763300;
     margin: 0 auto;
 }
 
 #promo .location-button:hover {
-    background-color: #f9f8f6;
-    color: #763300;
+    background-color: #763300;
+    color: #f9f8f6;
 }
 
 #promo .heading-text,
@@ -446,7 +416,7 @@ body {
 
     #promo .location-button {
         padding: 4px 10px;
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .promo-form .form-control {
@@ -458,6 +428,15 @@ body {
 /*-------PLACES---------*/
 #places .section-wrapper {
     margin-top: 50px;
+}
+
+.loc-text-block {
+    text-align: center;
+}
+
+.loc-text-block .section-text {
+    margin-bottom:16px;
+    text-align: left;
 }
 
 /*-------SUBSCRIPTION---------*/
@@ -494,6 +473,10 @@ body {
     margin-top: 10px;
 }
 
+.sub-text-block {
+    text-align: center;
+}
+
 /*-------SUBSCRIPTION MEDIA QUERIES---------*/
 
 /*-------for tablets ---------*/
@@ -501,6 +484,7 @@ body {
     .subs-section-block:after{
         background-attachment: scroll;
     }
+
 }
 
 /*---------------------------------LOCATIONS PAGE-----------------------------*/
@@ -617,22 +601,23 @@ body {
 }
 
 .location-button {
-    display: flex;
-    justify-content: center;
+    display: block;
     padding: 0.35em 1.2em;
     text-decoration: none;
     color: #763300;
     border: solid 1px #763300;
     font-weight: 400;
     margin: 10px auto;
-    background-color: white;
+    background-color: #f9f8f6;
     cursor: pointer;
     text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
 }
 
 .location-button:hover {
     color: white;
     background-color: #763300;
+    text-decoration: none;
 }
 
 button:focus {
@@ -739,8 +724,11 @@ button:focus {
 /*-----------------------------SUBSCRIPTION PAGE-----------------------------*/
 
 /*-------ABOUT---------*/
-.sub-options .section-text {
+.sub-options {
     text-align: center;
+}
+.sub-options .section-text {
+    margin-bottom: 10px;
 }
 
 #subscribe-about {
@@ -802,6 +790,10 @@ button:focus {
         font-size: 1.2;
         font-weight: 400;
     }
+
+    .sub-options .location-button{
+        max-width: 80%;
+    }
 }
 /*-------for tablets---------*/
 @media(max-width:768px){
@@ -819,7 +811,7 @@ button:focus {
 
     #sub-btn {
         display: block;
-        font-size: 12px;
+        font-size: 13px;
     } 
 
     .sub-options {
@@ -827,6 +819,14 @@ button:focus {
     }
 
 }
+
+@media(max-width:600px) {
+    .sub-options .location-button{
+        font-size: 14px;
+    }
+}
+
+
 
 /*-------CONTACT FORM---------*/
 
@@ -976,7 +976,7 @@ footer {
         text-align: center;
     }
     .section-wrapper {
-        margin: 30px 30px;
+        margin: 20px 30px;
     }
 }
 /*-------for small mobile devices---------*/
