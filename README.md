@@ -13,67 +13,89 @@ This is a website of **Holybean Coffee Company**  – coffee company network wit
 **Disclaimer** This coffee company does not exist and was created by the developer for the particular project. All contact details, addresses, services and promo are not true.    
 
 ### Core audience of the website (CA):
--	Hiring managers who is looking for an experienced PR or Marketing professional for the company he works. 
--	Marketing specialists or business owners who are searching for an external expert to help promote their business using PR and Marketing tools. 
+-	People who love to have a cup of coffee or/and sandwich in Cork, Blackrock or Little Island.
+-   People who search for a specialty coffee in Cork, Blackrock or Little Island.
+-   People across the Ireland who wants to get a freshly roasted coffee delivery right to their home.
  
 ### Website business goals
-* Build a personal brand awareness among the CA representatives.
-* Inform CA about skills and projects were made and increase a  willing to hire a professional.
-* Create an opportunity to contact the professional by any convenient way.
+* Build Holybean brand awareness among the CA representatives.
+* Attract CA to the Holybean coffee shops.
+* Provide clear information in a convenient form about the company and it's coffee shops locations, menu and promotions. 
+* Promote new coffee shop in the Little Island.
+* Attract new customers to the "coffee subscription" service.
 
 ## UX
 ### User stories:
-- As a **new visitor**, I want to understand whom this website belongs to and what its purpose. 
-- As a **new visitor**, I want to easily navigate the site to get a content what I need. 
-- As a **new visitor**, I want to see a website, which works properly on my device.
+- As a **new visitor**, I want to understand what this website about and what its purpose. 
+- As a **new visitor**, I want to easily navigate the site to get a content what I need;
+- As a **new visitor**, I want to see a website, which works properly on my device;
 - As a **new visitor**, I want to see a fully-filled website with up-to-date information;
-- As an **interested visitor**, I want to find more details about professional skills and projects he has implemented.
-- As an **interested visitor**, I want to be able to download the professional’s CV and take a look at his social media pages, especially Linkedin.
-- As an **interested visitor**, I want to easily find out how to contact with professional for further discussion.
-- As an **interested visitor**, I want to be able contact professional directly. (without a necessity to fill any forms). 
+- As a **new visitor** of a coffee shop site, I want to see short content blocks with nice and relevant pictures;
+- As a **new visitor**, I want to see a modern website with a pleasant coloгr palette.
+
+- As an **interested visitor** of a coffee shop site, I want to easily find clear information about its locations, services and special offers.
+- As an **interested visitor** in "coffee subscription" service, I want to get clear information how it works and how can I apply.
+- As an **interested visitor**, I wantg to easily find out how to contact with coffee shops, take a look to the the menu, book a table or order a delivery.
+- As an **interested visitor**, I want to see a good connection between sections and pages across the website. 
+
 ### Design
 - Color Scheme:
-  - There are three main colours being used in this project: white, black (for the font and background colour), because they look familiar to the common user eye; and mustard yellow to emphasize some elements which should catch a user’s attention).
+  - As a basis coffee [Color palette](https://colorpalettes.net/color-palette-3751/) was taken. But the accent were made on brown, milky,beige and dark grey (for font) colours. These colours were chosen because they associate with coffee theme and are pleasing to the eye.
 - Typorgaphy:
-  - There are two main fonts used in the website Montserrat and Open Sans – popular, convenient and frequently used in web design.
-  - The Montserrat font (with Sans Serif in case of fallback) is predominately used for navigation bar, contact details and all the headings on the website. 
-  - The Open Sans font (with Sans Serif in case of fallback) used for buttons text and the main text of the sections. 
+  - There are two main fonts used in the website Montserrat and Lato – convenient and frequently used in web design. Some of the most popular fonts in Google Fonts.
+  - The Montserrat font (with Sans Serif in case of fallback) is predominately used for navigation bar and all the buttons, headings and subheadings on the website. 
+  - The Lato font (with Sans Serif in case of fallback) used text and the main text of the sections. 
 ### Wireframe
-  - [View the website wireframe.](https://drive.google.com/drive/folders/1_wuuNgRNOyNAMoXgnUK5rviBZKJ7O-2J?usp=sharing)  
+  - [View the website wireframe.](https://drive.google.com/drive/folders/12UOnEAKZP5YEfr_APOKrw8rKQdTS74_O?usp=sharing)
 ### Features
 The website features are:
 - **Navigation bar**
-  - Website has responsive a navigation bar with a logo placing on the top-left and menu items on the top-right. When browsing the website from mobile devices, menu item list becoming a toggle-button with drop-down list. After clicking on a link menu is hiding automatically. 
-  - For user’s convenience, navigation bar has a fixed position. 
-- **Sections summary**
-  - Website consist of 5 sections: [Home](https://slavabdev.github.io/portfolio-ms1/#home), [About me](https://slavabdev.github.io/portfolio-ms1/#about), [My Projects](https://slavabdev.github.io/portfolio-ms1/#projects), [My skills](https://slavabdev.github.io/portfolio-ms1/#skills) and [Contacts](https://slavabdev.github.io/portfolio-ms1/#contacts).
-  - For user’s comfortable navigation, every section has a large heading and block divider between the header and text.   
-- **Hero (home) section**
-  - Hero section is illustrated by a full-screen image with transparent dark overlay. On desktop devices hero-image has a fixed position, which allows creating a parallax effect. For mobile devices hero-image is seen static, to avoid mobile cross-browser displaying problems. 
-  - The main header and text are placed over the hero-image.  Also there are two buttons located below the text – "*Hire me*" (leads to the Contacts section) and "*Download my CV*" (leads to a new page with CV pdf-file).
-  - A flashing yellow arrow on the bottom of the section invites user to proceed to the further section.
-- **About section**
-  - An about me section is made to be concisely and responsive.  There is a rounded photo on the top and a short introduction text below the picture.
+  - Website has responsive a navigation bar with a logo placing on the top-left and menu items on the top-right. When browsing the website from mobile devices, menu item list becoming a toggle-button with a full-screen drop-down list. 
+  - For user’s convenient navigation, navigation bar has a fixed position. 
+  - **Footer**
+  - Footer includes social media icons with *hover effect* and active links to the particular pages. Considering the fact that Holybean coffee shop doesn't exists, social media links lead to the developer personal social media pages. 
+  Also there is a copyright text below the icons.
+- **Website summary**
+  - Website consist of 3 pages: [Home](https://slavabdev.github.io/MS2-coffeeshop-website/index.html), [Locations](https://slavabdev.github.io/MS2-coffeeshop-website/locations.html) and [Subscribe](https://slavabdev.github.io/MS2-coffeeshop-website/subscribe.html).
+  - For user’s comfortable navigation, every section inside the pages has a large and perceptible heading and pleasant picture. 
+  - During the scrolling a website page for blocks of content slide-in effect applied.  This feature applied in all the pages of the website.
 
-- **My projects section**
-  - One of the most important sections on the site is «My projects».
-  - The Projects section is laid out in 3 columns wide for desktop screen, 2 columns wide for tablets and 1 column wide for mobile devices. 
-  - Except for the heading elements, it includes a description of three projects and a button on the bottom of the section.
-  - Every block featured by a particular project photo, heading and a short description. 
-  - The *image hover effect* is used to display projects. This means that the desktop user will see only images when navigating the section. Heading and description appear when he hovers a cursor over the project. For the mobile devices, this effect works similar, but the user has to tap on the project to see the information.
-  - The “*More projects*” button on the bottom of the section opens in a new page and leads to the external portfolio pdf-file.  
-- **My skills section**
-  - As a projects section, the skills section is responsive as well and laid out in 3 columns wide for desktop screen, 2 columns wide for tablets and 1 column wide for mobile devices.
-  - This section features 6 skills blocks. Every skill block consists of icon (with hover grow effect), heading and description.   
-- **Contacts section** 
-    - The Contacts section consists of two main blocks: 
-        - Contacts block:
-            - It includes a “download my cv” button and three ways of direct communication - phone, email and whatsapp. All contact methods imply an active and valid link. 
-        - Contact form: 
-            - For users who used to use contact forms, such opportunity has been added. Contact form features 4 fields (with two required fields) and “*Contact me*” button.
-            - For user’s convenience, section is laid out in 2 columns wide for desktop screen, 1 column wide for tablets and mobile devices. 
-- **Footer**
-  - Footer includes social media icons with *hover effect* and active and valid links to the particular pages. Also there is a copyright text below the icons.
+- **Home page**
+- Besides navigation bar and footer **Home page** consists of **5 sections**: 
+1. Carousel. There are three slides in carousel. Every slide includes heading and button for convenient navigation between sections and pages. 
+- For a smooth transition between sections on the same page smooth scroll feature is applied.
+2. About.
+- The about section is made to be concisely and responsive.  There are a thematic photo and a short text.
+3. Promo.
+A promo section includes a thematic picture (picture does not display on mobile devices deliberately, so as not to overload the page) and the content part with short text description and form.
+- If the user leaves his details (name and email) and push the Submit button, he will get an email with promocode. To be sure that form submitted successfully, the user will see a corresponding alert at the page.
+4. Locations
+The Location section is made to be concisely and responsive.  There are a thematic photo and a short text with a button that leads to the Locations page.
+5. Subscription section
+The Subscription section is made to be concisely and responsive. There are a short text with a button that leads to Subscription page.
+On desktop devices subscription section background image has a fixed position, which allows creating a parallax effect. For mobile devices hero-image is seen static, to avoid mobile cross-browser displaying problems. 
+  
+- **Locations page**
+- Locations page can be devided by 2 sections:
+1. According to the legend, Holybean has 3 coffee shops. On the Locations page, every coffee shop has a  block with information with Name, address and contacts. There is also a "Show on map" button at the bottom of each block.
+2. Google map.
+- Maps have been added to the site for easy access to coffee shops locations.
+- Every place has its own marker on the map.
+- By clicking a "Show on map" button, map brings to a particular marker.
+- By clicking on the marker, Inform window with a short text appears.
+- User can get directions by clicking a corresponding link inside the inform window.  
+
+- **Subscribe page**
+- Subscribe page includes 3 sections:
+1. The Subscribe details section is made to be concisely and responsive. There are a thematic photo and a short text. 
+- There is also a "Choose your subscription" button. But to avoid the site overload with content "Choose your subscription" toggle button is displayed only on mobile devices. (It toggle down Subscribe options section) 
+2. Subscribe options section laid out in 3 small blocks which displayed permanently on large screens. Each block includes a short description of options and button on the bottom.
+- Depending on which button user presses, the text with his choice will be placed in the text area of ​​the form (he can also add to the placed content any text he wants). This feature is supposed to make it easier for the user to fill out the form.
+3. Subscription form will allow the user who interested in a coffee subscription to leave his details for further communications.
+- Filled form with user details goes to Holybean email via EmailJS.
+
+
+
 ### Things to implement in future
 - Add a blog section to the website.
 - Update the "*contact form*".
