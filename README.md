@@ -10,7 +10,7 @@
 ### Legend:
 This is a website of **Holybean Coffee Company**  – coffee company network with 3 coffee shops across the county Cork (Ireland). Website consists of three pages **Homepage, Locations and Subscribe** and supposed to be clear and user-friendly as well as responsive for different types of devices.
 
-**Disclaimer** This coffee company does not exist and was created by the developer for the particular project. All contact details, addresses, services and promo are not true.    
+**Disclaimer** Holybean coffee company does not exist and was created by the developer for the particular project. All the contact details, addresses, services and offers are not true.    
 
 ### Core audience of the website (CA):
 -	People who love to have a cup of coffee or/and sandwich in Cork, Blackrock or Little Island.
@@ -33,10 +33,10 @@ This is a website of **Holybean Coffee Company**  – coffee company network wit
 - As a **new visitor** of a coffee shop site, I want to see short content blocks with nice and relevant pictures;
 - As a **new visitor**, I want to see a modern website with a pleasant coloгr palette.
 
-- As an **interested visitor** of a coffee shop site, I want to easily find clear information about its locations, services and special offers;
+- As an **interested visitor** of a coffee shop site, I want to easily find clear information about its locations;
+- As an **interested visitor** of a coffee shop site, I want to easily find clear information about its special offers;
 - As an **interested visitor** in "coffee subscription" service, I want to get clear information how it works and how can I apply;
 - As an **interested visitor**, I wantg to easily find out how to contact with coffee shops, take a look to the the menu, book a table or order a delivery;
-- As an **interested visitor**, I want to see a good connection between sections and pages across the website. 
 
 ### Design
 - Color Scheme:
@@ -105,23 +105,23 @@ The website features are:
   - [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
   - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 - **Frameworks, Libraries & Programs Used:**
-1.	[Bootstrap 4.0.0](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+1.	[Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
      - Bootstrap was used to assist with the responsiveness and styling of the website.
 2.  [Google Fonts](https://fonts.google.com/):
     - Google fonts were used to import the “Open Sans” and “Montserrat” fonts into the style.css file which are used on the website.
 3.	[Font Awesome](https://fontawesome.com/): 
      - Font Awesome was used to add icons to locations page and footer of the website.
-6.	[jQuery](https://jquery.com/):
+4.	[jQuery](https://jquery.com/):
     - jQuery used to make the navigation bar responsive and to add event listeners.
     [EmailJS](https://www.emailjs.com/):
     - Used to Get and Send emails from/to the users.
-9.	[AOS](https://michalsnik.github.io/aos/):
+5.	[AOS](https://michalsnik.github.io/aos/):
     - Animate on scroll library (AOS) used to create a slide effect while scrolling the website pages.   
-7.	[Git](https://git-scm.com/):
+6.	[Git](https://git-scm.com/):
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
-8.	[GitHub](https://github.com/):
+7.	[GitHub](https://github.com/):
     - GitHub is used to store the projects code after being pushed from Git. 
-9.	[jsDelivr](https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/):
+8.	[jsDelivr](https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/):
     - jsDelivr was also used for the smooth scroll in JavaScript. 
 9.	[Corel draw](https://www.coreldraw.com/):
      - Corel draw was used to resize images and editing photos for the website.
@@ -134,6 +134,43 @@ The website features are:
 The W3C Markup Validator and W3C CSS Validator Services were used in the project to ensure there were no syntax errors.
 * [W3C Markup Validator](https://validator.w3.org/nu/).
 * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/). 
+
+**Testing User Stories from User Experience (UX) Section**
+- As a **new visitor**, I want to understand what this website about and what its purpose. 
+    - Upon entering the site, the user sees the company logo on the navigation bar and a slider with themed images of coffee and the key information of the company. When scrolling down the home page, the user gets all the basic information about the company.
+- As a **new visitor**, I want to easily navigate the site to get a content what I need;
+    - The website has a clear and understandable, responsive and fixed navigation bar, which allow to user navigate the pages and sections easily.
+    - User can navigate the website using navigation bar as well as buttons located on pages. 
+- As a **new visitor**, I want to see a website, which works properly on my device;
+    - Website is made fully responsive, so it’s convenient to browse on a desktop, laptop, tablet and mobile devices. 
+    - Website works stably with different browsers as well.
+- As a **new visitor**, I want to see a fully-filled website with up-to-date information;
+    - All information, including description, locations, services, contact details and internal/external files are relevant and up-to-date.
+- As a **new visitor** of a coffee shop site, I want to see short content blocks with nice and relevant pictures;
+    - The content blocks designed to be short and clear so as not to take up users time.
+- As a **new visitor**, I want to see a modern website with a pleasant colour palette.
+    - The website (including the buttons, forms and content) is made in the one style and using pleasant coffee colour palette.
+- As an **interested visitor** of a coffee shop site, I want to easily find clear information about its locations;
+    - There are three different ways to get to the location page - navbar, slider and location section on the Home page.
+    - On the location page user can pick any Holybean coffeeshop and zoom it in on the map, by clicking the "Show on map" button. Moreover, user can get a direction to a particular Holybean coffee shop by clicking a link inside the info window, which appears when the user clicks on a marker on the map.
+    - User can easily navigate between the locations using the map inside the locations page. 
+- As an **interested visitor** of a coffee shop site, I want to easily find clear information about its special offers;
+    - User can easily find the actual information about the acting promo on the main page slider and in the promo section of the main page. 
+    - Also the information about the promo is waiting for the user in location page (in the coffee shop block and in marker info window). 
+- As an **interested visitor** in "coffee subscription" service, I want to get clear information on how it works and how can I apply;
+    - User can get to the coffee subscription page using the navigation bar, slider and the bottom section of the main page.  
+    - The subscription page is made clear and all section are arranged in the logical order. This gives the ability to the user calmly get familiar with all the conditions and submit an application.
+- As an **interested visitor**, I want to easily find out how to contact with coffee shops, take a look at the menu, book a table or order a delivery;
+    - All the contact details are located on the location page. Because the user will intuitively look for this information there.
+    - To get rid of a user from typing manually, phone number and email are made as links. The menu is decorated as the link either and opens in a new tab.
+
+
+
+
+
+
+
+
 
 **Testing User Stories from User Experience (UX) Section**
   - As a **new visitor**, I want to understand whom this website belongs to and what its purpose. 
@@ -155,6 +192,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used in the project
     - User can easily get to Contacts section either through the navigation bar, or the “Hire me” button from the hero image section.   
 - As an **interested visitor**, I want to be able contact professional directly. (without a necessity to fill any forms). 
     - There are several ways to contact the professional. User may do it by filling a contact form as well as by phone, email or WhatsApp. 
+
+
 ### Further testing
 - The website was tested on the following browsers:
     * Google Chrome;
@@ -162,11 +201,11 @@ The W3C Markup Validator and W3C CSS Validator Services were used in the project
     * Mozilla Firefox; 
     * Microsoft Edge; 
     * Safari.
-- The website was viewed on such devices as desktops, laptops, tablet (Samsung galaxy tab A), and mobile (IPhone X, IPhone XS Max, Huawei P10, IPhone11, Samsung Galaxy S10).
-- All buttons and links have been tested several times to make sure they work correctly.
+- To be sure that website is responsive, it was viewed on such devices as desktops, laptops, tablet (Samsung galaxy tab A), and mobile (Iphone 6, IPhone X, IPhone XS Max, IPhone11 PRO MAX, Samsung Galaxy S10) .
+- All buttons, forms and links have been tested several times to make sure they work correctly.
 - Friends and family members reviewed the website from their devices to make sure that website is displaying well and all functions are working properly. 
 ### Known Bugs
-- At the current moment, if the user clicks on different subscription options buttons for many times, it causes to a page "freezing". To eliminate this user has to put a cursor and click at any place of the form lines or refresh the page. 
+- At the current moment, if the user clicks on different subscription options buttons (subscription page) for many times, it causes to a page "freezing". To eliminate this user has to put a cursor and click at any place of the form lines or refresh the page. 
 ## Deployment
 This project was developed using the GitPod, committed to Git and pushed to GitHub.
 ### GitHub Pages
