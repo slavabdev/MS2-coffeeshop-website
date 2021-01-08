@@ -166,7 +166,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used in the project
     - Verify that form cannot be submitted without filling of all the required lines.
     - Test the form to verify that user will get a promo code in his email
     - Verify that form will be automatically cleaned after submission
-[Promo form test results](https://drive.google.com/file/d/1ULbFkERKyo6H8aIDAPeT-1nxv_caBcW6/view?usp=sharing)
+    - [Promo form test results](https://drive.google.com/file/d/1ULbFkERKyo6H8aIDAPeT-1nxv_caBcW6/view?usp=sharing)
 - Locations section
     - Confirm that all content is visible
     - Hover over the button to verify that it changes its colour;
@@ -212,7 +212,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used in the project
     - Verify that form will be automatically cleaned after submission
     - Expand and reduce a screen size to verify that section looks good on different screen widths. 
     - Reduce the width of the window to confirm that the fixed background change to static.
-    [Subscription form test results](https://drive.google.com/file/d/1pUIHtMiAhEF0IwY0bc_pRDE3G3ZanZI2/view?usp=sharing)
+    - [Subscription form test results](https://drive.google.com/file/d/1pUIHtMiAhEF0IwY0bc_pRDE3G3ZanZI2/view?usp=sharing)
 
 
 **Testing User Stories from User Experience (UX) Section**
