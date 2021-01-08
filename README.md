@@ -5,7 +5,8 @@
 [View the project here.](https://slavabdev.github.io/MS2-coffeeshop-website/)
 </div>
 
-<h2 align="center"><a href="https://ibb.co/2K7SGN4"><img src="https://i.ibb.co/F7bXRVT/devices.png" alt="website-devices" border="0"></a><h2 align="center">
+<h2 align="center"><a href="https://ibb.co/4TKCCVC"><img src="https://i.ibb.co/6PrGGWG/website-screenshot.png" alt="website-screenshot" border="0"></a><h2 align="center">
+
 
 ### Legend:
 This is a website of **Holybean Coffee Company**  – coffee company network with 3 coffee shops across the county Cork (Ireland). Website consists of three pages **Homepage, Locations and Subscribe** and supposed to be clear and user-friendly as well as responsive for different types of devices.
@@ -60,7 +61,7 @@ The website features are:
   - For user’s comfortable navigation, every section inside the pages has a large and perceptible heading and pleasant picture. 
   - During the scrolling a website page for blocks of content slide-in effect applied.  This feature applied in all the pages of the website.
 
-- **Home page**
+- **HOME PAGE**
 - Besides navigation bar and footer **Home page** consists of **5 sections**: 
 1. Carousel. There are three slides in carousel. Every slide includes heading and button for convenient navigation between sections and pages. 
     - For a smooth transition between sections on the same page smooth scroll feature is applied.
@@ -75,7 +76,7 @@ The website features are:
     - The Subscription section is made to be concisely and responsive. There are a short text with a button that leads to Subscription page.
     - On desktop devices subscription section background image has a fixed position, which allows creating a parallax effect. For mobile devices hero-image is seen static, to avoid mobile cross-browser displaying problems. 
   
-- **Locations page**
+- **LOCATIONS PAGE**
 - Locations page can be devided by 2 sections:
 1. According to the legend, Holybean has 3 coffee shops. 
     - On the Locations page, every coffee shop has a  block with information with Name, address and contacts. There is also a "Show on map" button at the bottom of each block.
@@ -86,7 +87,7 @@ The website features are:
     - By clicking on the marker, Inform window with a short text appears.
     - User can get directions by clicking a corresponding link inside the inform window.  
 
-- **Subscribe page**
+- **SUBSCRIBE PAGE**
 - Subscribe page includes 3 sections:
 1. The Subscribe details section is made to be concisely and responsive. There are a thematic photo and a short text. 
     - There is also a "Choose your subscription" button. But to avoid the site overload with content "Choose your subscription" toggle button is displayed only on mobile devices. (It toggle down Subscribe options section) 
@@ -165,35 +166,6 @@ The W3C Markup Validator and W3C CSS Validator Services were used in the project
     - To get rid of a user from typing manually, phone number and email are made as links. The menu is decorated as the link either and opens in a new tab.
 
 
-
-
-
-
-
-
-
-**Testing User Stories from User Experience (UX) Section**
-  - As a **new visitor**, I want to understand whom this website belongs to and what its purpose. 
-    - Upon entering the website user sees a hero image with name and profession of the owner. There are also two clear call-to-action buttons below the text.
- - As a **new visitor**, I want to easily navigate the site to get a content what I need. 
-    - The website has a clear, responsive and fixed navigation bar, which allow to user navigate the site sections easily.
-    - Every navigation bar item is highlighted depending on the section where user is in (during scrolling it happens automatically).
-  - As a **new visitor**, I want to see a website, which works properly on my device.
-    - Website is made fully responsive, so it’s convenient to browse on a desktop, tablet and mobile devices. 
- - As a **new visitor**, I want to see a fully-filled website with up-to-date information.
-    - All information, including description, contact details and internal/external files are relevant and up-to-date.
-- As an **interested visitor**, I want to find more details about professional skills and projects he has implemented.
-    - The relevant sections have a prominent headline and are easily accessible through the navigation bar. 
-    - The project section has a button, which lead user to external file with detailed portfolio.
-- As an **interested visitor**, I want to be able to download the professional’s CV and take a look at his social media pages, especially Linkedin.
-    - For the user’s convenience, there are two buttons which allow him to download a CV. One located at the top of the website (hero-image section) and the second on the bottom (contact section).
-    - The relevant links to social media accounts are located in the footer section (right below the contacts section).    
-- As an **interested visitor**, I want to easily find out how to contact with professional for further discussion.
-    - User can easily get to Contacts section either through the navigation bar, or the “Hire me” button from the hero image section.   
-- As an **interested visitor**, I want to be able contact professional directly. (without a necessity to fill any forms). 
-    - There are several ways to contact the professional. User may do it by filling a contact form as well as by phone, email or WhatsApp. 
-
-
 ### Further testing
 - The website was tested on the following browsers:
     * Google Chrome;
@@ -250,50 +222,17 @@ Click the [link](https://docs.github.com/en/free-pro-team@latest/github/creating
 - Code snippet for my projects *hover effect* was taken and revised from [bbbootstrap.com.](https://bbbootstrap.com/snippets/simple-image-overlay-hover-effect-38877551)
 - [Bootstrap 4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library mainly used to  make responsive website.
 - [Css-tricks](https://css-tricks.com/), [W3school](https://www.w3schools.com/), [MDN Web Docs](https://developer.mozilla.org/) and [Stack overflow](https://stackoverflow.com/): These resources were used to find coding hints and solutions. 
+- [AOS](https://michalsnik.github.io/aos/):
+This library was used to create a slide effect while scrolling the website pages.   
+
 ### Content
 - All content was written by the developer.
 ### Media
-- All Images were created by the developer.
+- All images were taken from [Freepik](https://www.freepik.com/photos/background) and [unplush](https://unsplash.com).
+- photos were made by @Tyler Nix, @Nathan Dumlao, @Wherda Arsianto, @Jonas Jacobsson, @Monika Dhita Adiati and @Danielle MacInnes
 ### README
 - Code institute README.
 ### Acknowledgements
 - Friends and family for helpful feedback.
 - My Mentor Oluwafemi Medale for support and useful feedback.
 - Code Institute for teaching me how to make coding magic.
-
-
-
-nav bar
-https://www.youtube.com/watch?v=gXkqy0b4M5g 
-
-slider pic cups
-<a href="https://www.freepik.com/photos/background">Background photo created by rawpixel.com - www.freepik.com</a>
-
-slider pic book
-<a href='https://www.freepik.com/photos/background'>Background photo created by jcomp - www.freepik.com</a>
-
-coffee cups
-<span>Photo by <a href="https://unsplash.com/@jtylernix?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Tyler Nix</a> on <a href="https://unsplash.com/s/photos/coffee-cup?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-
-coffee with sandwich
-<span>Photo by <a href="https://unsplash.com/@nate_dumlao?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Nathan Dumlao</a> on <a href="https://unsplash.com/s/photos/coffee-cup?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-
-cuo and hands 
-<span>Photo by <a href="https://unsplash.com/@wherda?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Wherda Arsianto</a> on <a href="https://unsplash.com/s/photos/coffee-cup?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-
-
-locations
-<span>Photo by <a href="https://unsplash.com/@jonasjacobsson?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jonas Jacobsson</a> on <a href="https://unsplash.com/s/photos/coffee-shop?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-
-slider hands<span>Photo by <a href="https://unsplash.com/@dhitaadiati?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Monika Dhita Adiati</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-
-coffee begin
-<span>Photo by <a href="https://unsplash.com/@dsmacinnes?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Danielle MacInnes</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-
-pourover
-<span>Photo by <a href="https://unsplash.com/@jtylernix?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Tyler Nix</a> on <a href="https://unsplash.com/s/photos/coffee-shop?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-
-Slide cup<span>Photo by <a href="https://unsplash.com/@jtylernix?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Tyler Nix</a> on <a href="https://unsplash.com/s/photos/coffee-shop-white?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-
-roaster
-<span>Photo by <a href="https://unsplash.com/@thecoffeeapostle?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jon Stanford</a> on <a href="https://unsplash.com/s/photos/coffee-roast?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
