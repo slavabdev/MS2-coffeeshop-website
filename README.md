@@ -33,13 +33,13 @@ Holybean coffee company does not exist and was created by the developer for the 
 - As a **new visitor**, I want to see a website, which works properly on my device;
 - As a **new visitor**, I want to see a fully-filled website with up-to-date information;
 - As a **new visitor** of a coffee shop site, I want to see short content blocks with nice and relevant pictures;
-- As a **new visitor**, I want to see a modern website with a pleasant coloгr palette.
+- As a **new visitor**, I want to see a modern website with a pleasant colour palette.
 
 - As an **interested visitor** of a coffee shop site, I want to easily find clear information about its locations;
 - As an **interested visitor** of a coffee shop site, I want to easily find clear information about its special offers;
 - As an **interested visitor** of a coffee shop site, I want to see all links are working properly.
 - As an **interested visitor** in "coffee subscription" service, I want to get clear information how it works and how can I apply;
-- As an **interested visitor**, I wantg to easily find out how to contact with coffee shops, take a look to the the menu, book a table or order a delivery;
+- As an **interested visitor**, I want to easily find out how to contact with coffee shops, take a look to the the menu, book a table or order a delivery;
 
 ### Design
 - Color Scheme:
@@ -53,7 +53,7 @@ Holybean coffee company does not exist and was created by the developer for the 
 ### Features
 The website features are:
 - **Navigation bar**
-  - Website has responsive a navigation bar with a logo placing on the top-left and menu items on the top-right. When browsing the website from mobile devices, menu item list becoming a toggle-button with a full-screen drop-down list. 
+  - Website has a responsive navigation bar with a logo placing on the top-left and menu items on the top-right. When browsing the website from mobile devices, menu item list becoming a toggle-button with a full-screen drop-down list. 
   - For user’s convenient navigation, navigation bar has a fixed position. 
   - **Footer**
   - Footer includes social media icons with *hover effect* and active links to the particular pages. Considering the fact that Holybean coffee shop doesn't exists, social media links lead to the developer personal social media pages. 
@@ -61,7 +61,7 @@ The website features are:
 - **Website summary**
   - Website consist of 3 pages: [Home](https://slavabdev.github.io/MS2-coffeeshop-website/index.html), [Locations](https://slavabdev.github.io/MS2-coffeeshop-website/locations.html) and [Subscribe](https://slavabdev.github.io/MS2-coffeeshop-website/subscribe.html).
   - For user’s comfortable navigation, every section inside the pages has a large and perceptible heading and pleasant picture. 
-  - During the scrolling a website page for blocks of content slide-in effect applied.  This feature applied in all the pages of the website.
+  - During the scrolling a website page for blocks of content slide-in effect applied.  This feature applied to all the pages of the website.
 
 - **HOME PAGE**
 - Besides navigation bar and footer **Home page** consists of **5 sections**: 
@@ -71,12 +71,12 @@ The website features are:
     - The about section is made to be concisely and responsive.  There are a thematic photo and a short text.
 3. Promo.
     - A promo section includes a thematic picture (picture does not display on mobile devices deliberately, so as not to overload the page) and the content part with short text description and form.
-    - If the user leaves his details (name and email) and push the Submit button, he will get an email with promocode. To be sure that form submitted successfully, the user will see a corresponding alert at the page.
+    - If the user enters his details (name and email) and push the Submit button, he will get an email with promocode. To be sure that form is submitted successfully, the user will see a corresponding alert at the page.
 4. Locations
     - The Location section is made to be concisely and responsive.  There are a thematic photo and a short text with a button that leads to the Locations page.
 5. Subscription section
     - The Subscription section is made to be concisely and responsive. There are a short text with a button that leads to Subscription page.
-    - On desktop devices subscription section background image has a fixed position, which allows creating a parallax effect. For mobile devices hero-image is seen static, to avoid mobile cross-browser displaying problems. 
+    - On desktop devices subscription section background image has a fixed position, which allows to create a parallax effect. For mobile devices hero-image is seen static, to avoid mobile cross-browser displaying problems. 
   
 - **LOCATIONS PAGE**
 - Locations page can be devided by 2 sections:
@@ -139,18 +139,18 @@ The W3C Markup Validator and W3C CSS Validator Services were used in the project
 
 ### Manual testing of all elements and their functionality.
 
-- Navigation bar:
+- **NAVIGATION BAR**:
     - Hover over the logo and navbar items and verify that colour is changed.
     - Click on the logo to make sure that it links to the homepage.
     - Click all the navbar items to verify that they work and lead the user to correct pages.
     - Change the screen size from desktop to tablet and from tablet to mobile to make sure that the navigation bar switches from the inline menu to burger dropdown menu. Check all menu items to verify that they are on the correct place and burger animation works well.
     - Confirm that the navigation bar 
-- Footer:
+- **FOOTER**:
     - Hover over each social media icon and make sure that colour change expected.
     - Click on each icon to confirm that link opens in a separate tab.
     - Play with the window width to verify that the footer is responsive and looks good for different screen sizes
     - Confirm that footer code is the same on all HTML pages.
-- HOME PAGE
+- **HOME PAGE**
     - Open the page in different browsers and scroll it down to make sure that slide in effect is working. 
 -Carousel
     - Click on the arrows to verify that carousel works correctly and all slides are displayed accurately.
@@ -178,7 +178,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used in the project
     - Click the button to make sure that it links with the correct page
     - Expand and reduce a screen size to verify that section looks good on different screen widths. 
     - Reduce the width of the window to confirm that the fixed background change to a static.
-- LOCATIONS PAGE
+- **LOCATIONS PAGE**
     - Confirm that all content and Google Map are visible
     - Expand and reduce a screen size to verify that the page looks good on different screen widths. 
 - Coffee shops description
@@ -192,7 +192,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used in the project
     - Click on every marker to verify that info-window will appear
     - Check that info window has a correct content.
     - Check all the links, including the get direction links inside the info window and verify that they work correctly.
-- SUBSCRIPTION
+- **SUBSCRIPTION**
 - About 
     - Confirm that all content (except button) is visible in the desktop
     - Confirm that button will appear for tablet or devices with smaller screen widths. 
