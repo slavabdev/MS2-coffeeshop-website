@@ -403,8 +403,7 @@ body {
 
 /*-------FORM MEDIA QUERIES---------*/
 
-/*-------for mobile devices with
- screen-width less than 600px ---------*/
+/*-------for small mobile devices---------*/
 @media(max-width:600px) {
     .form-group label {
         font-size: 12px;
@@ -787,7 +786,7 @@ button:focus {
 /*-------for large tablets and laptops---------*/
 @media(max-width:1024px){
     #subscribe-opt h5 {
-        font-size: 1.2;
+        font-size: 1.2rem;
         font-weight: 400;
     }
 
