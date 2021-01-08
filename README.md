@@ -11,7 +11,8 @@
 ### Legend:
 This is a website of **Holybean Coffee Company**  – coffee company network with 3 coffee shops across the county Cork (Ireland). Website consists of three pages **Homepage, Locations and Subscribe** and supposed to be clear and user-friendly as well as responsive for different types of devices.
 
-**Disclaimer** Holybean coffee company does not exist and was created by the developer for the particular project. All the contact details, addresses, services and offers are not true.    
+### Disclaimer 
+Holybean coffee company does not exist and was created by the developer for the particular project. All the contact details, addresses, services and offers are not true.    
 
 ### Core audience of the website (CA):
 -	People who love to have a cup of coffee or/and sandwich in Cork, Blackrock or Little Island.
@@ -36,6 +37,7 @@ This is a website of **Holybean Coffee Company**  – coffee company network wit
 
 - As an **interested visitor** of a coffee shop site, I want to easily find clear information about its locations;
 - As an **interested visitor** of a coffee shop site, I want to easily find clear information about its special offers;
+- As an **interested visitor** of a coffee shop site, I want to see all links are working properly.
 - As an **interested visitor** in "coffee subscription" service, I want to get clear information how it works and how can I apply;
 - As an **interested visitor**, I wantg to easily find out how to contact with coffee shops, take a look to the the menu, book a table or order a delivery;
 
@@ -96,7 +98,6 @@ The website features are:
 3. Subscription form will allow the user who interested in a coffee subscription to leave his details for further communications.
     - Filled form with user details goes to Holybean email via EmailJS.
 
-
 ### Things to implement in future
 - Add an online store page (With abilities to buy coffee and order delivery).
 
@@ -136,6 +137,84 @@ The W3C Markup Validator and W3C CSS Validator Services were used in the project
 * [W3C Markup Validator](https://validator.w3.org/nu/).
 * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/). 
 
+### Manual testing of all elements and their functionality.
+
+- Navigation bar:
+    - Hover over the logo and navbar items and verify that colour is changed.
+    - Click on the logo to make sure that it links to the homepage.
+    - Click all the navbar items to verify that they work and lead the user to correct pages.
+    - Change the screen size from desktop to tablet and from tablet to mobile to make sure that the navigation bar switches from the inline menu to burger dropdown menu. Check all menu items to verify that they are on the correct place and burger animation works well.
+    - Confirm that the navigation bar 
+- Footer:
+    - Hover over each social media icon and make sure that colour change expected.
+    - Click on each icon to confirm that link opens in a separate tab.
+    - Play with the window width to verify that the footer is responsive and looks good for different screen sizes
+    - Confirm that footer code is the same on all HTML pages.
+- HOME PAGE
+    - Open the page in different browsers and scroll it down to make sure that slide in effect is working. 
+-Carousel
+    - Click on the arrows to verify that carousel works correctly and all slides are displayed accurately.
+    - Hover over the buttons to make sure that they change the colour.
+    - Click the buttons to verify that they link with the correct sections/pages
+    - Expand and reduce a screen size to verify that slider looks good on different screen widths. 
+- About section
+    - Expand and reduce a screen size to verify that this section looks good on different screen widths. 
+- Promo section
+    - Confirm that all content is visible for desktop.
+    - Confirm that photo is hiding for tablet and smaller devices. 
+    - Expand and reduce a screen size to verify that section looks good on different screen widths. 
+    - Verify that form cannot be submitted without filling of all the required lines.
+    - Test the form to verify that user will get a promo code in his email
+    - Verify that form will be automatically cleaned after submission
+[Promo form test results](https://drive.google.com/file/d/1ULbFkERKyo6H8aIDAPeT-1nxv_caBcW6/view?usp=sharing)
+- Locations section
+    - Confirm that all content is visible
+    - Hover over the button to verify that it changes its colour;
+    - Click the button to make sure that it links with the correct page
+    - Expand and reduce a screen size to verify that section looks good on different screen widths. 
+- Subscribe section
+    - Confirm that all content is visible
+    - Hover over the button to verify that it changes its colour;
+    - Click the button to make sure that it links with the correct page
+    - Expand and reduce a screen size to verify that section looks good on different screen widths. 
+    - Reduce the width of the window to confirm that the fixed background change to a static.
+- LOCATIONS PAGE
+    - Confirm that all content and Google Map are visible
+    - Expand and reduce a screen size to verify that the page looks good on different screen widths. 
+- Coffee shops description
+    - Hover over the buttons and links to verify that they change its colour;
+    - Click the button to make sure that it will zoom- in a correct map marker
+    - Click the menu links and make sure that the menu file opens in the new tab.
+    - Click the phone link to make sure that it will be opened by the internal phone agent
+    - Click the email link to make sure that it will be opened by the internal email agent
+- Map
+    - Make sure that all markers are on the map
+    - Click on every marker to verify that info-window will appear
+    - Check that info window has a correct content.
+    - Check all the links, including the get direction links inside the info window and verify that they work correctly.
+- SUBSCRIPTION
+- About 
+    - Confirm that all content (except button) is visible in the desktop
+    - Confirm that button will appear for tablet or devices with smaller screen widths. 
+    - Hover over the button to verify that it changes its colour;
+    - Click the button to make sure that it links with the correct section.
+    - Expand and reduce a screen size to verify that section looks good on different screen widths. 
+- Subscription options
+    - Confirm that all content is visible in the desktop
+    - Hover over the buttons to verify that it changes its colour;
+    - Make sure that content will be hidden for tablet or smaller devices.
+    - Verify that on a tablet or smaller devices this section can be toggled by the button from About section 
+    - Click any button in the subscription options section  to make sure that they add a text to the text area of the form
+    - Expand and reduce a screen size to verify that section looks good on different screen widths. 
+- Form
+    - Verify that form cannot be submitted without filling of all the required lines.
+    - Test the form to verify that users request will be delivered to the Holybean email address.
+    - Verify that form will be automatically cleaned after submission
+    - Expand and reduce a screen size to verify that section looks good on different screen widths. 
+    - Reduce the width of the window to confirm that the fixed background change to static.
+    [Subscription form test results](https://drive.google.com/file/d/1pUIHtMiAhEF0IwY0bc_pRDE3G3ZanZI2/view?usp=sharing)
+
+
 **Testing User Stories from User Experience (UX) Section**
 - As a **new visitor**, I want to understand what this website about and what its purpose. 
     - Upon entering the site, the user sees the company logo on the navigation bar and a slider with themed images of coffee and the key information of the company. When scrolling down the home page, the user gets all the basic information about the company.
@@ -158,6 +237,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used in the project
 - As an **interested visitor** of a coffee shop site, I want to easily find clear information about its special offers;
     - User can easily find the actual information about the acting promo on the main page slider and in the promo section of the main page. 
     - Also the information about the promo is waiting for the user in location page (in the coffee shop block and in marker info window). 
+- As an **interested visitor** of a coffee shop site, I want to see all links are working properly.
+    - All buttons, forms and links were tested for many times and worked perfect.
 - As an **interested visitor** in "coffee subscription" service, I want to get clear information on how it works and how can I apply;
     - User can get to the coffee subscription page using the navigation bar, slider and the bottom section of the main page.  
     - The subscription page is made clear and all section are arranged in the logical order. This gives the ability to the user calmly get familiar with all the conditions and submit an application.
